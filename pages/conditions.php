@@ -17,5 +17,7 @@ get_header();
     <h1 style="padding:120px 0">this is A clean <b>Condition</b> page </h1>
 </div>
 
+
+
 <?php
 get_footer();

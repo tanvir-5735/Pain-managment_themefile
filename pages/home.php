@@ -16,6 +16,9 @@ get_header();
 <?php get_template_part('template-parts/home/home_banner', 'banner'); ?>
 <?php get_template_part('template-parts/home/aboutPractice', 'aboutPractice'); ?>
 <?php get_template_part('template-parts/home/condition_we_treat', 'conditionWeTreat'); ?>
+<?php get_template_part('template-parts/home/Dr_Salah_Eldin', 'DrSalahEldin'); ?>
+<?php get_template_part('template-parts/home/Meet_Our_Expert_Doctor', 'MeetOurExpertDoctor'); ?>
+
 </main>
 
 <?php get_footer(); ?>

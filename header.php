@@ -31,14 +31,14 @@
     </div>
     <!-- *******nav bar******* -->
     <header id="header" class="">
-        <nav>
+        <nav class="myContiner">
             <div class="nav_wrapper">
                 <!-- ===nav logo=== -->
                 <div class="navLogo">
                     <img src="http://localhost/smohamed/wp-content/uploads/2025/10/header_log.png" alt="logo">
                 </div>
                 <!-- ===nav menu=== -->
-                 <div class="nav_menu hidden">
+                 <div class="nav_menu">
                     <ul class="nav_menu_list">
                         <li class="nav_menu_list_item"><a href="<?php echo home_url('/'); ?>">Home</a></li>
                         <li class="nav_menu_list_item"><a href="<?php echo home_url('/about-practice'); ?>">About Practice</a></li>
@@ -52,8 +52,10 @@
                  <!-- ====nav button=== -->
                   <div class="nav_Buttons">
                     <button>Book Appointment</button>
-                    <span id="mobile_menu_icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1E3070"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
-                    <span id="mobile_menu_icon_close" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1E3070"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
+                    <div class="mobile_menu_icon_wrapper">
+                        <span id="mobile_menu_icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1E3070"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
+                        <span id="mobile_menu_icon_close" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1E3070"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
+                    </div>
                   </div>
                   
                   
