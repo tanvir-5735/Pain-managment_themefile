@@ -14,6 +14,7 @@ get_header();
 
 <div>
     <h1 style="padding:120px 0; width:100%;">this is A clean <b>Contact_Page</b> page </h1>
+    <?php get_template_part('template-parts/home/home_banner', 'banner'); ?>
 </div>
 
 

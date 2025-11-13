@@ -245,25 +245,89 @@
     }
 }
 
-#Meet_Our_Expert_Doctor{
-    .specilist_wrapper{
-        width: 100vw;
-        overflow-x: hidden;
-        .specilist_header{
+#Meet_Our_Expert_Doctor {
+    background: linear-gradient(#E9EAF1, #6dc31c05);
+
+    .specilist_wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 102px;
+
+        .specilist_header {
             text-align: center;
+            padding: 80px 10px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 400px;
+                height: 400px;
+                background: radial-gradient(#6DC31C52, #6dc31c2f, #6dc31c11, #6dc31c04, #6dc31c00);
+                border-radius: 50%;
+            }
+
+            span {
+                font-size: clamp(16px, calc(10px + 1vw), 24px);
+            }
+
+            h3 {
+                font-size: clamp(18px, calc(16px + 3vw), 56px);
+                color: var(--primary-color);
+            }
+
         }
-        .specilist_card_wrapper{
-            .specilist_card{
+
+        .specilist_card_wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 20px;
+            gap: 100px;
+
+            .specilist_card {
                 width: 100%;
                 max-width: 524px;
-                .card_image{
+
+                .card_image {
                     width: 100%;
-                    .doctorImg{
-                        width: 100%;
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
+                    aspect-ratio: 524/331;
+                    background-color: #E9EAF1;
+                    border-radius: 10px 10px 0 0;
+                    position: relative;
+
+                    img {
+                        width: 80%;
+                        aspect-ratio: 460/534;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                .card_content {
+                    width: 100%;
+                    padding: 24px;
+                    background-color: #68749F;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                    .card_btn_wrapper {
+                        display: flex;
+                        justify-content: space-between;
+
+                        button {
+                            border: none;
+                            outline: none;
+                            padding: 20px 67px;
+                            background-color: var(--primary-color);
+                            color: white;
                         }
                     }
                 }
@@ -900,6 +964,7 @@
             }
         }
     }
+
     #doctor_details {
         width: 100%;
 

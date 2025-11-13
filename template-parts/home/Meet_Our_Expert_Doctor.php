@@ -19,9 +19,24 @@
             <div class="specilist_card_wrapper">
                 <div class="specilist_card">
                     <div class="card_image">
-                        <div class="doctorImg">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/11/d9e0d1241709e70d73aa4ca492bd1d02a5e0b75c.png" alt="doctor image">
+
+                            <img src="http://localhost/customtheme/wp-content/uploads/2025/11/14DA12D5-1263-4B13-BCB2-925D87481156-1.png" alt="doctor image">
+
+                    </div>
+                    <div class="card_content">
+                        <h6> Dr. Hossam Eldin Mohamed </h6>
+                        <p>Physical Medicine & Rehabilitation interventional Pain Management</p>
+                        <div class="card_btn_wrapper">
+                            <button>Learn More</button>
+                            <button>Book Now</button>
                         </div>
+                    </div>
+                </div>
+                <div class="specilist_card">
+                    <div class="card_image">
+
+                            <img src="http://localhost/customtheme/wp-content/uploads/2025/11/hgj.png" alt="doctor image">
+
                     </div>
                     <div class="card_content">
                         <h6> Dr. Hossam Eldin Mohamed </h6>

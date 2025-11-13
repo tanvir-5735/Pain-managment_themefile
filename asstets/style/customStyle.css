@@ -32,8 +32,9 @@ header#header nav .nav_wrapper {
   align-items: center;
 }
 header#header nav .nav_wrapper .navLogo {
-  width: 120px;
-  height: 120px;
+  width: 148px;
+  height: 148px;
+  border: 1px solid #213ea7;
 }
 header#header nav .nav_wrapper .navLogo img {
   -o-object-fit: cover;
@@ -902,6 +903,32 @@ footer#footer .footerWrapper .footNote {
     gap: 30px;
   }
 }
+#about_practice {
+  width: 100%;
+  padding-top: 102px;
+}
+#about_practice .about_wrapper_container {
+  width: 100%;
+}
+#about_practice .about_wrapper_container .about_banner {
+  width: 100%;
+}
+#about_practice .about_wrapper_container .about_banner .aboutBannerImage {
+  width: 100%;
+  aspect-ratio: 1674/759;
+}
+#about_practice .about_wrapper_container .about_banner .aboutBannerImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 20px;
+}
+#about_practice .about_wrapper_container .about_content_wraper {
+  width: 100%;
+  padding: 48px;
+  background-color: rgba(240, 249, 232, 0.4862745098);
+}
 #homeBanner {
   width: 100%;
   height: calc(100vh - 100px);
@@ -1107,12 +1134,45 @@ footer#footer .footerWrapper .footNote {
      object-fit: cover;
 }
 
+#Meet_Our_Expert_Doctor {
+  background: linear-gradient(#E9EAF1, rgba(109, 195, 28, 0.0196078431));
+}
 #Meet_Our_Expert_Doctor .specilist_wrapper {
-  width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 102px;
 }
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header {
   text-align: center;
+  padding: 80px 10px;
+  position: relative;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(rgba(109, 195, 28, 0.3215686275), rgba(109, 195, 28, 0.1843137255), rgba(109, 195, 28, 0.0666666667), rgba(109, 195, 28, 0.0156862745), rgba(109, 195, 28, 0));
+  border-radius: 50%;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header span {
+  font-size: clamp(16px, 10px + 1vw, 24px);
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header h3 {
+  font-size: clamp(18px, 16px + 3vw, 56px);
+  color: var(--primary-color);
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  gap: 100px;
 }
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card {
   width: 100%;
@@ -1120,15 +1180,36 @@ footer#footer .footerWrapper .footNote {
 }
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image {
   width: 100%;
+  aspect-ratio: 524/331;
+  background-color: #E9EAF1;
+  border-radius: 10px 10px 0 0;
+  position: relative;
 }
-#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image .doctorImg {
-  width: 100%;
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image img {
+  width: 80%;
+  aspect-ratio: 460/534;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image .doctorImg img {
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding: 24px;
+  background-color: #68749F;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper button {
+  border: none;
+  outline: none;
+  padding: 20px 67px;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 @media screen and (max-width: 576px) {
@@ -1977,6 +2058,14 @@ footer#footer .footerWrapper .footNote {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--primary-color);
 }
 
 .hidden {
