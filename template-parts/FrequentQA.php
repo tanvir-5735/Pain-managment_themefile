@@ -84,4 +84,6 @@
              </ul>
          </div>
      </div>
+     <div class="FrequentQA_footer_wrapper"></div>
+
  </div>

@@ -5,10 +5,11 @@
 @import 'component/home/home';
 @import 'component/AboutOurPhysicians';
 @import 'component/doctorSection';
-@import 'component/treat_heading';
 @import 'component/officeLocations';
 @import 'component/PatientEducation';
 @import 'component/contact';
+@import 'commonComponent';
+@import 'typography';
 :root {
     --primary-color: #1E3070;
 }
@@ -18,22 +19,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 500;
-    line-height: 1.2;
-    color: var(--primary-color);
-}
-p{
-    margin: 0 0 0 0;
-}
+
 body{
     width: 100%;
     background-color: white !important;
 }
 .hidden{display: none;}
-
 .myContiner {
     width: 100%;
     max-width: 1770px;

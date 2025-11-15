@@ -1,3 +1,9 @@
+.myBtn{
+    display: inline-block;
+    padding: 12px;
+    background-color: #1E3070;
+    color: white;
+}
 
 
 .traet_heading{
@@ -10,28 +16,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         gap: 20px;
-    
-        h2 {
-            font-size: 48px;
-            color: var(--primery-color);
-            font-weight: 700;
-            width: 100%;
-            border: 1px solid red;
-        }
-    
         .line {
             width: 100%;
             max-width: 320px;
-            border: 1px solid red;
             height: 5px;
             background: radial-gradient(#6DC31C, #6dc31c75, #6dc31c17, #6dc31c00);
             border-radius: 50%;
         }
         p{
             width: 100%;
-            border: 1px solid red;
         }
     }
 }

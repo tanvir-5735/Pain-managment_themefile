@@ -27,23 +27,29 @@
                         <h6> Dr. Hossam Eldin Mohamed </h6>
                         <p>Physical Medicine & Rehabilitation interventional Pain Management</p>
                         <div class="card_btn_wrapper">
-                            <button>Learn More</button>
-                            <button>Book Now</button>
+                            <a href="http://localhost/smohamed/dr-hossam-eldin-mohamed/">
+                                <div class="myBtn"><span>Learn more</span></div>
+                            </a>
+                            <a href="/smohamed/about-our-physicians/" class="interlink">
+                                <div class="myBtn">book now</div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="specilist_card">
                     <div class="card_image">
-
                             <img src="http://localhost/smohamed/wp-content/uploads/2025/11/334d516b9.png" alt="doctor image">
-
                     </div>
                     <div class="card_content">
-                        <h6> Dr. Hossam Eldin Mohamed </h6>
+                        <h6> Dr. Salah Eldin Mohamed </h6>
                         <p>Physical Medicine & Rehabilitation interventional Pain Management</p>
                         <div class="card_btn_wrapper">
-                            <button>Learn More</button>
-                            <button>Book Now</button>
+                            <a href="/dr-salah-eldin-mohamed">
+                                <div class="myBtn"><span>Learn more</span></div>
+                            </a>
+                            <a href="/smohamed/about-our-physicians/" class="interlink">
+                                <div class="myBtn">book now</div>
+                            </a>
                         </div>
                     </div>
                 </div>

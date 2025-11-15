@@ -20,6 +20,7 @@ header#header {
   position: absolute;
   top: 95px;
   left: 0;
+  z-index: 999;
 }
 header#header nav {
   width: 100%;
@@ -985,6 +986,10 @@ footer#footer .footerWrapper .footNote {
 #homeBanner .banner_content_wrapper .banner_content h1 {
   font-size: 74px;
   font-weight: 600;
+  color: white;
+}
+#homeBanner .banner_content_wrapper .banner_content p {
+  padding: 20px 0 40px 0;
 }
 #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
   border: none;
@@ -1267,7 +1272,7 @@ footer#footer .footerWrapper .footNote {
     color: white;
   }
   #homeBanner .banner_content_wrapper .banner_content h1 {
-    font-size: 74px;
+    font-size: 44px;
     font-weight: 600;
   }
   #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
@@ -2122,6 +2127,7 @@ footer#footer .footerWrapper .footNote {
 
 #doctor_section {
   padding-top: 102px;
+  background-color: #6DC31C;
 }
 #doctor_section .doctor_section_wrapper {
   width: 100%;
@@ -2181,38 +2187,6 @@ footer#footer .footerWrapper .footNote {
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
-}
-
-.traet_heading .treat_heading_wrapper {
-  width: 100%;
-  padding: 48px;
-  background-color: rgba(109, 195, 28, 0.1450980392);
-  border: 1px solid rgba(109, 195, 28, 0.6588235294);
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 20px;
-}
-.traet_heading .treat_heading_wrapper h2 {
-  font-size: 48px;
-  color: var(--primery-color);
-  font-weight: 700;
-  width: 100%;
-  border: 1px solid red;
-}
-.traet_heading .treat_heading_wrapper .line {
-  width: 100%;
-  max-width: 320px;
-  border: 1px solid red;
-  height: 5px;
-  background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
-  border-radius: 50%;
-}
-.traet_heading .treat_heading_wrapper p {
-  width: 100%;
-  border: 1px solid red;
 }
 
 #ofice_location {
@@ -2393,14 +2367,46 @@ footer#footer .footerWrapper .footNote {
   height: 200px;
 }
 
-:root {
-  --primary-color: #1E3070;
+.myBtn {
+  display: inline-block;
+  padding: 12px;
+  background-color: #1E3070;
+  color: white;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.traet_heading .treat_heading_wrapper {
+  width: 100%;
+  padding: 48px;
+  background-color: rgba(109, 195, 28, 0.1450980392);
+  border: 1px solid rgba(109, 195, 28, 0.6588235294);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.traet_heading .treat_heading_wrapper .line {
+  width: 100%;
+  max-width: 320px;
+  height: 5px;
+  background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+  border-radius: 50%;
+}
+.traet_heading .treat_heading_wrapper p {
+  width: 100%;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: white;
+}
+
+h2 {
+  font-size: 48px;
+  color: var(--primery-color);
+  font-weight: 700;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2413,6 +2419,16 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0 0 0 0;
+}
+
+:root {
+  --primary-color: #1E3070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
