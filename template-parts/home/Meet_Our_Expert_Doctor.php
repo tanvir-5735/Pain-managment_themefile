@@ -57,3 +57,14 @@
         </div>
     </div>
 </section>
+<style> /* ----added by me--- */
+    #Meet_Our_Expert_Doctor{
+        .myContainer{
+            .specilist_wrapper{
+                margin: 80px 0;
+            }
+
+        }
+
+    }
+</style>

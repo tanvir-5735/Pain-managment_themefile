@@ -25,3 +25,9 @@ get_header();
 
 <?php
 get_footer();
+?>
+<style> /* ----added by me--- */
+.treat_heading_wrapper{
+    margin-top:80px;
+}
+</style>

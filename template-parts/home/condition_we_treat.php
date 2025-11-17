@@ -122,3 +122,18 @@
         </div>
     </div>
 </section>
+<style>
+     #consitionWeTreat{ /* ----added by me--- */
+        .myContainer{
+            .conditionWeTreatWrapper{
+                display:flex;
+                flex-direction:column;
+                gap:48px
+            }
+        }
+
+     
+
+        
+    }
+</style>

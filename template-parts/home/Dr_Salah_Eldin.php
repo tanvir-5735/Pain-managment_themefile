@@ -52,3 +52,15 @@
         </div>
     </div>
 </section>
+<style>  /* ----added by me--- */
+    #doctor_details{
+        .myContiner{
+            .doctor_Detail_Wrapper{
+                margin-top:80px ;
+            }
+
+        }
+
+    }
+
+</style>
