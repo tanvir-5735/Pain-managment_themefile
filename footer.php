@@ -37,7 +37,7 @@
             <div class="footerContent">
               <div class="footerCol1">
                 <div class="foterLogo">
-                  <img src="http://localhost/smohamed/wp-content/uploads/2025/10/header_log.png" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/header_log.png" alt="">
                 </div>
                 <div class="footerContact">
                   <h6>Contact us:</h6>
@@ -51,7 +51,7 @@
                 </div>
               </div>
               <div class="footerCol2">
-                <img src="http://localhost/smohamed/wp-content/uploads/2025/10/map-box.png" alt=" footer map">
+                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/10/map-box.png" alt=" footer map">
               </div>
             </div>
             <div class="footNote">

@@ -20,7 +20,7 @@ get_header();
         <div class="about_wrapper_container">
             <div class="about_banner">
                 <div class="aboutBannerImage">
-                    <img src="http://localhost/smohamed/wp-content/uploads/2025/11/about_banner.jpg"
+                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/about_banner.jpg"
                         alt="about banner image">
                 </div>
             </div>
@@ -38,7 +38,9 @@ get_header();
                         We believe healing works best as a partnership. Our role is to guide and support you with the best possible care, while you remain the captain of your own journey. Our mission is simple: to help you move better, feel better, and live better — one patient, one story, one step at a time.
                     </p>
                     <div class="btn_wrapper">
-                        <button>Meet our Providers</button>
+                        <a href="<?php echo get_permalink( get_page_by_path( 'about-our-physicians' ) ); ?>">
+                            <button>Meet Our Providers</button>
+                        </a>
                     </div>
                 </div>
                 <div class="about_content_list">

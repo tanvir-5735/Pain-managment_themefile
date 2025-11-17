@@ -54,7 +54,7 @@ get_header();
                         <br>
                         Dr. Mohamed combines medical and interventional approaches to design individualized treatment plans. With a solid ability to diagnose and manage complex pain issues, this pain management doctor makes sure to stay at the forefront of medical advancements. He is always on the lookout for the latest and greatest pain medicine to stay up-to-date with the latest innovations in pain medicine, making him one of the most sought-after pain management doctors in NYC and NJ.
                     ',
-                    'doctor_image'   => 'http://localhost/smohamed/wp-content/uploads/2025/11/Dr.-Salah-Eldin-Mohamed.jpg',
+                    'doctor_image'   => 'http://localhost/smohammed/wp-content/uploads/2025/11/Dr.-Salah-Eldin-Mohamed.jpg',
                     'breadcrumb'     => 'Home / About Practice / Learn More'
                 ]
             );

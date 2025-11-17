@@ -35,7 +35,9 @@
             <div class="nav_wrapper">
                 <!-- ===nav logo=== -->
                 <div class="navLogo">
-                    <img src="http://localhost/smohamed/wp-content/uploads/2025/10/header_log.png" alt="logo">
+                    <a href="/smohamed/home">
+                        <img src="<?php echo get_template_directory_uri(); ?>/header_log.png" alt="logo">
+                    </a>
                 </div>
                 <!-- ===nav menu=== -->
                  <div class="nav_menu">
@@ -51,7 +53,7 @@
                  </div>
                  <!-- ====nav button=== -->
                   <div class="nav_Buttons">
-                    <button>Book Appointment</button>
+                    <button><a href="http://localhost/smohamed/about-our-physicians/">Book Appointment</a></button>
                     <div class="mobile_menu_icon_wrapper">
                         <span id="mobile_menu_icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1E3070"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
                         <span id="mobile_menu_icon_close" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1E3070"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>

@@ -24,7 +24,7 @@ get_header();
             </div>
             <div class="exercise_document_wrapper">
                 <div class="exercise_document_item">
-                    <img src="http://localhost/smohamed/wp-content/uploads/2025/11/image-5.png" alt="exercise_document_item">
+                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/image-5.png" alt="exercise_document_item">
                 </div>
             </div>
         </div>
@@ -35,3 +35,4 @@ get_header();
 
 <?php
 get_footer();
+?>

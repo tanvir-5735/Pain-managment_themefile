@@ -27,7 +27,7 @@
 
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/10/Rectangle-18874-2.png" alt="" class="glaryImage">
+                            <img src="<?php echo get_template_directory_uri(); ?>/asstets/images/Arthritis.jpg" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>Typically presents as a dull ache or sharp pain in the lower back. Pain often worsens with activity and may include stiffness or radiate into the leg (sciatica)</p>
                             </div>
@@ -38,79 +38,79 @@
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/10/Rectangle-18874-2.png" alt="" class="glaryImage">
+                            <img src="<?php echo get_template_directory_uri(); ?>/asstets/images/Neck Pain.jpg" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>Typically presents as a dull ache or sharp pain in the lower back. Pain often worsens with activity and may include stiffness or radiate into the leg (sciatica)</p>
                             </div>
                         </div>
                         <div class="cardTag">
-                            <span>Back Pain</span>
+                            <span>Neck Pain</span>
                         </div>
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/10/Rectangle-18874-2.png" alt="" class="glaryImage">
+                            <img src="<?php echo get_template_directory_uri(); ?>/asstets/images/Migraine.jpg" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>Typically presents as a dull ache or sharp pain in the lower back. Pain often worsens with activity and may include stiffness or radiate into the leg (sciatica)</p>
                             </div>
                         </div>
                         <div class="cardTag">
-                            <span>Back Pain</span>
+                            <span>Headaches & Migraines</span>
                         </div>
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/10/Rectangle-18874-2.png" alt="" class="glaryImage">
+                            <img src="<?php echo get_template_directory_uri(); ?>/asstets/images/Neuropathy Nerve pain.webp" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>Typically presents as a dull ache or sharp pain in the lower back. Pain often worsens with activity and may include stiffness or radiate into the leg (sciatica)</p>
                             </div>
                         </div>
                         <div class="cardTag">
-                            <span>Back Pain</span>
+                            <span>Nerve Pain</span>
                         </div>
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/10/Rectangle-18874-2.png" alt="" class="glaryImage">
+                            <img src="<?php echo get_template_directory_uri(); ?>/asstets/images/Pain After Back Surgery.jpg" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>Typically presents as a dull ache or sharp pain in the lower back. Pain often worsens with activity and may include stiffness or radiate into the leg (sciatica)</p>
                             </div>
                         </div>
                         <div class="cardTag">
-                            <span>Back Pain</span>
+                            <span>Post-Surgical Pain</span>
                         </div>
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/10/Rectangle-18874-2.png" alt="" class="glaryImage">
+                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/Muscle-Soft_Tissue-Pain.jpg" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>Typically presents as a dull ache or sharp pain in the lower back. Pain often worsens with activity and may include stiffness or radiate into the leg (sciatica)</p>
                             </div>
                         </div>
                         <div class="cardTag">
-                            <span>Back Pain</span>
+                            <span>Muscle & Soft Tissue Pain</span>
                         </div>
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/10/Rectangle-18874-2.png" alt="" class="glaryImage">
+                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/Cancer-Pain.jpg" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>Typically presents as a dull ache or sharp pain in the lower back. Pain often worsens with activity and may include stiffness or radiate into the leg (sciatica)</p>
                             </div>
                         </div>
                         <div class="cardTag">
-                            <span>Back Pain</span>
+                            <span>Cancer Pain</span>
                         </div>
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/10/Rectangle-18874-2.png" alt="" class="glaryImage">
+                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/Joint_Pain.png" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>Typically presents as a dull ache or sharp pain in the lower back. Pain often worsens with activity and may include stiffness or radiate into the leg (sciatica)</p>
                             </div>
                         </div>
                         <div class="cardTag">
-                            <span>Back Pain</span>
+                            <span>Joint Pain</span>
                         </div>
                     </div>
 

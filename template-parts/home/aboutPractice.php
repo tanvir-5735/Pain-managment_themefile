@@ -10,7 +10,7 @@
     <div class="myContiner">
         <div class="aboutPracticeWrapper">
             <div class="practiceImage">
-                <img src="http://localhost/smohamed/wp-content/uploads/2025/10/image-1.png" alt="consult image">
+                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/10/image-1.png" alt="consult image">
             </div>
             <div class="practiceContent">
                 <div class="practiceContentWrapper">

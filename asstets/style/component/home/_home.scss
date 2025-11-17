@@ -18,12 +18,14 @@
             max-width: 650px;
             text-align: center;
             color: white;
-
             h1 {
                 font-size: 74px;
                 font-weight: 600;
+                color: white;
             }
-
+            p{
+                padding: 20px 0 40px 0;
+            }
             .btnWrapper {
                 button {
                     border: none;
@@ -91,6 +93,7 @@
 
 #consitionWeTreat {
     width: 100%;
+    margin-top: 102px;
 
     .conditionWeTreatWrapper {
         .heading {
@@ -359,7 +362,7 @@
                 color: white;
 
                 h1 {
-                    font-size: 74px;
+                    font-size: 44px;
                     font-weight: 600;
                 }
 
