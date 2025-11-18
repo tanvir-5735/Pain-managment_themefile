@@ -18,7 +18,11 @@
                     <h2>Practice</h2>
                     <h5>Comprehensive Pain Management Solutions</h5>
                     <p>At our practice, we are dedicated to providing compassionate, personalized care to every patient. Our team combines advanced medical expertise with a commitment to understanding each individual’s unique needs. Whether you’re visiting for diagnosis, treatment, or ongoing care, we strive to create a comfortable environment where your health and well-being come first.</p>
-                    <button>See All</button>
+                   
+                        <a href="<?php echo get_permalink( get_page_by_path( 'about-practice' ) ); ?>" class="interlink">
+                            <div class="myBtn">See All</div>
+                        </a>
+                    
                 </div>
             </div>
         </div>

@@ -30,7 +30,7 @@
                             <a href="<?php echo get_permalink( get_page_by_path( 'dr-hossam-eldin-mohamed' ) ); ?>">
                                 <div class="myBtn"><span>Learn more</span></div>
                             </a>
-                            <a href="/smohamed/about-our-physicians/" class="interlink">
+                            <a href="about-our-physicians" class="interlink">
                                 <div class="myBtn">book now</div>
                             </a>
                         </div>
@@ -47,7 +47,7 @@
                             <a href="<?php echo get_permalink( get_page_by_path( 'dr-salah-eldin-mohamed' ) ); ?>">
                                 <div class="myBtn"><span>Learn more</span></div>
                             </a>
-                            <a href="/smohamed/about-our-physicians/" class="interlink">
+                            <a href="<?php echo home_url('/about-our-physicians/'); ?>" class="interlink">
                                 <div class="myBtn">book now</div>
                             </a>
                         </div>
@@ -59,12 +59,9 @@
 </section>
 <style> /* ----added by me--- */
     #Meet_Our_Expert_Doctor{
-        .myContainer{
             .specilist_wrapper{
                 margin: 80px 0;
             }
-
-        }
 
     }
 </style>

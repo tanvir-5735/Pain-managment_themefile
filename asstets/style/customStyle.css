@@ -623,7 +623,7 @@ header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
 }
 footer#footer {
   width: 100%;
-  padding: 20px;
+  padding: 48px;
   background-color: var(--primary-color);
   color: white;
 }
@@ -651,10 +651,16 @@ footer#footer .footerWrapper .footerContent {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 footer#footer .footerWrapper .footerContent .footerCol1 {
   display: flex;
   gap: 120px;
+}
+footer#footer .footerWrapper .footerContent .footerCol1 .footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
 footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
   width: -moz-fit-content;
@@ -662,6 +668,11 @@ footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
   background-color: white;
   color: var(--primary-color);
   padding: 5px 12px;
+}
+footer#footer .footerWrapper .footerContent .footerCol1 .footerContact p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
 }
 footer#footer .footerWrapper .footNote {
   display: flex;
@@ -708,6 +719,7 @@ footer#footer .footerWrapper .footNote {
     flex-direction: column;
     justify-content: space-between;
     padding: 30px 0;
+    align-items: flex-start;
   }
   footer#footer .footerWrapper .footerContent .footerCol1 {
     display: flex;
@@ -723,6 +735,9 @@ footer#footer .footerWrapper .footNote {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .footerContact {
+    gap: 10px;
   }
   footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
     width: -moz-fit-content;
@@ -784,7 +799,8 @@ footer#footer .footerWrapper .footNote {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: flex-start;
     padding: 30px 0;
   }
   footer#footer .footerWrapper .footerContent .footerCol1 {
@@ -801,6 +817,9 @@ footer#footer .footerWrapper .footNote {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .footerContact {
+    gap: 16px;
   }
   footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
     width: -moz-fit-content;
@@ -828,7 +847,7 @@ footer#footer .footerWrapper .footNote {
 @media screen and (min-width: 1024px) {
   footer#footer {
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     background-color: #1E3070;
     color: white;
   }
@@ -863,6 +882,7 @@ footer#footer .footerWrapper .footNote {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 30px 0;
   }
   footer#footer .footerWrapper .footerContent .footerCol1 {
@@ -881,6 +901,9 @@ footer#footer .footerWrapper .footNote {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  footer#footer .footerWrapper .footerContent .footerCol1 .footerContact {
+    gap: 20px;
+  }
   footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
     width: -moz-fit-content;
     width: fit-content;
@@ -889,7 +912,7 @@ footer#footer .footerWrapper .footNote {
     padding: 5px 12px;
   }
   footer#footer .footerWrapper .footerContent .footerCol2 {
-    width: 100%;
+    aspect-ratio: 811/303;
   }
   footer#footer .footerWrapper .footerContent .footerCol2 img {
     width: 100%;
@@ -962,6 +985,34 @@ footer#footer .footerWrapper .footNote {
   font-weight: 700;
 }
 
+.myBtn span {
+  position: relative;
+  z-index: 2;
+}
+
+.traet_heading .treat_heading_wrapper {
+  width: 100%;
+  padding: 48px;
+  background-color: rgba(109, 195, 28, 0.1450980392);
+  border: 1px solid rgba(109, 195, 28, 0.6588235294);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.traet_heading .treat_heading_wrapper .line {
+  width: 100%;
+  max-width: 320px;
+  height: 5px;
+  background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+  border-radius: 50%;
+}
+.traet_heading .treat_heading_wrapper p {
+  width: 100%;
+}
+
 #homeBanner {
   width: 100%;
   height: calc(100vh - 100px);
@@ -991,13 +1042,53 @@ footer#footer .footerWrapper .footNote {
 #homeBanner .banner_content_wrapper .banner_content p {
   padding: 20px 0 40px 0;
 }
-#homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-  border: none;
-  outline: none;
-  background-color: var(--primary-color);
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 12px 48px;
+  background-color: #1E3070;
   color: white;
-  padding: 20px 14px;
   border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 #aboutPractice {
@@ -1035,13 +1126,47 @@ footer#footer .footerWrapper .footNote {
 #aboutPractice .aboutPracticeWrapper .practiceContent h2:nth-child(2) {
   color: green;
 }
-#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper button {
-  border: none;
-  outline: none;
-  background-color: var(--primary-color);
+#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .myBtn {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px 50px;
+  background-color: #1E3070;
   color: white;
-  padding: 14px 20px;
   border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 #consitionWeTreat {
@@ -1096,6 +1221,12 @@ footer#footer .footerWrapper .footNote {
   filter: grayscale(1);
   transition: 0.3s all linear;
 }
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .scroll_hidden {
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
   position: absolute;
   bottom: 0;
@@ -1113,14 +1244,47 @@ footer#footer .footerWrapper .footNote {
   padding: 20px 0;
   text-align: center;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn button {
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn .myBtn {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 20px 80px;
-  background-color: var(--primary-color);
+  background-color: #1E3070;
   color: white;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 #doctor_details {
@@ -1147,15 +1311,49 @@ footer#footer .footerWrapper .footNote {
   font-size: 64px;
 }
 #doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .desc {
-  padding: 0;
+  padding: 20px 0 40px 0;
 }
-#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button button {
-  padding: 20px 80px;
-  background-color: var(--primary-color);
+#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button .myBtn {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 12px 48px;
+  background-color: #1E3070;
   color: white;
-  border: none;
-  outline: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
   width: 100%;
@@ -1237,17 +1435,61 @@ footer#footer .footerWrapper .footNote {
   background-color: #68749F;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  color: white;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content h6 {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content p {
+  padding: 20px 0 25px 0;
 }
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper {
   display: flex;
   justify-content: space-between;
 }
-#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper button {
-  border: none;
-  outline: none;
-  padding: 20px 67px;
-  background-color: var(--primary-color);
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper a .myBtn {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 12px 48px;
+  background-color: #1E3070;
   color: white;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper a .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper a .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper a .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 @media screen and (max-width: 576px) {
@@ -1275,14 +1517,6 @@ footer#footer .footerWrapper .footNote {
   #homeBanner .banner_content_wrapper .banner_content h1 {
     font-size: 44px;
     font-weight: 600;
-  }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 20px 14px;
-    border-radius: 8px;
   }
   #aboutPractice {
     width: 100%;
@@ -1414,7 +1648,7 @@ footer#footer .footerWrapper .footNote {
     font-size: 44px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .desc {
-    padding: 0;
+    padding: 12px 0 20px 0;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
     width: 100%;
@@ -1457,13 +1691,8 @@ footer#footer .footerWrapper .footNote {
     font-size: 74px;
     font-weight: 600;
   }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 20px 14px;
-    border-radius: 8px;
+  #homeBanner .banner_content_wrapper .banner_content .desc {
+    padding: 12px 0 20px 0;
   }
   #aboutPractice {
     width: 100%;
@@ -1646,14 +1875,6 @@ footer#footer .footerWrapper .footNote {
     font-size: 74px;
     font-weight: 600;
   }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 20px 14px;
-    border-radius: 8px;
-  }
   #aboutPractice {
     width: 100%;
     height: -moz-fit-content;
@@ -1786,7 +2007,7 @@ footer#footer .footerWrapper .footNote {
     font-size: 44px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .desc {
-    padding: 0;
+    padding: 20px 0 30px 0;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
     width: 100%;
@@ -1828,14 +2049,6 @@ footer#footer .footerWrapper .footNote {
   #homeBanner .banner_content_wrapper .banner_content h1 {
     font-size: 74px;
     font-weight: 600;
-  }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 20px 14px;
-    border-radius: 8px;
   }
   #aboutPractice {
     width: 100%;
@@ -1972,14 +2185,6 @@ footer#footer .footerWrapper .footNote {
     font-size: 74px;
     font-weight: 600;
   }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 20px 14px;
-    border-radius: 8px;
-  }
   #aboutPractice {
     width: 100%;
     height: -moz-fit-content;
@@ -2090,6 +2295,7 @@ footer#footer .footerWrapper .footNote {
 }
 #About_Our_Physicians {
   width: 100%;
+  padding-top: 50px;
 }
 #About_Our_Physicians .About_Our_Physicians_wrapper {
   width: 100%;
@@ -2368,11 +2574,9 @@ footer#footer .footerWrapper .footNote {
   height: 200px;
 }
 
-.myBtn {
-  display: inline-block;
-  padding: 12px;
-  background-color: #1E3070;
-  color: white;
+.myBtn span {
+  position: relative;
+  z-index: 2;
 }
 
 .traet_heading .treat_heading_wrapper {

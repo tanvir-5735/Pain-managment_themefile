@@ -39,7 +39,10 @@
                         </p>
                     </div>
                     <div class="book_now_button">
-                        <button>Book Now </button>
+                        <a href="<?php echo get_permalink( get_page_by_path( 'about-our-physicians' ) ); ?>" class="interlink">
+                            <div class="myBtn">Book Now </div>
+                        </a>
+                        <!-- <button>Book Now </button> -->
                     </div>
                 </div>
             </div>

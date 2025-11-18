@@ -39,7 +39,7 @@ get_header();
                     </p>
                     <div class="btn_wrapper">
                         <a href="<?php echo get_permalink( get_page_by_path( 'about-our-physicians' ) ); ?>">
-                            <button>Meet Our Providers</button>
+                            <div class="myBtn">Meet Our Providers</div>
                         </a>
                     </div>
                 </div>

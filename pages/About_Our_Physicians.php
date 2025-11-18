@@ -14,9 +14,7 @@ get_header();
 ?>
 <section id="About_Our_Physicians">
     <div class="myContiner">
-        <div class="breadCrumb">
-            <p>Home / About Practice / About Our Physicians</p>
-        </div>
+        
         <div class="About_Our_Physicians_wrapper">
             <div class="our_expertDoctor">
                 <?php get_template_part('template-parts/home/Meet_Our_Expert_Doctor', 'MeetOurExpertDoctor'); ?>

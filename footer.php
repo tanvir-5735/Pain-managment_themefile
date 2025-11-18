@@ -7,6 +7,7 @@
             <div class="footernav">
                 <ul>
                     <li>About Practice</li>
+                    <li>Conditions</li>
                     <li>Treatments</li>
                     <li>Patient Education</li>
                     <li>Contact</li>
