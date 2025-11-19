@@ -123,7 +123,7 @@
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/Muscle-Soft_Tissue-Pain.jpg" alt="" class="glaryImage">
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/Muscle-Soft_Tissue-Pain.jpg" alt="" class="glaryImage">
                             <div class="glaryContent scroll_hidden">
                                 <p>Muscle and soft tissue pain (Myalgia) refers to discomfort in the muscles,
                                    ligaments, tendons, and <strong>fascia</strong> (connective tissue).
@@ -152,7 +152,7 @@
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/Cancer-Pain.jpg" alt="" class="glaryImage">
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/Cancer-Pain.jpg" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>Cancer pain is a complex symptom that can be caused by the disease itself, by
                                    the treatment, or by other related conditions. Pain management is a crucial
@@ -166,7 +166,7 @@
                     </div>
                     <div class="glaryItem">
                         <div class="glaryCard">
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/Joint_Pain.png" alt="" class="glaryImage">
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/Joint_Pain.png" alt="" class="glaryImage">
                             <div class="glaryContent">
                                 <p>
                                     <strong>Peripheral joint pain</strong> is a common issue causing generalized

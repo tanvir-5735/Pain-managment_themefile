@@ -117,7 +117,9 @@ get_header();
 
                         </div>
                     </div>
-                    <button>Send Message</button>
+                    <a href="<?php echo home_url('#'); ?>" class="interlink">
+                                <div class="myBtn">Send Message</div>
+                     </a>                    
                 </form>
             </div>
         </div>

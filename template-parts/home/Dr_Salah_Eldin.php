@@ -48,7 +48,7 @@
             </div>
             <div class="doctor_image_wrapper">
                 <div class="doctor_Image">
-                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/Dr.-Salah-Eldin-Mohamed.jpg"
+                    <img src="<?php echo wp_get_upload_dir()['url']; ?>/Dr.-Salah-Eldin-Mohamed.jpg"
                     alt="picture">
                 </div>
             </div>

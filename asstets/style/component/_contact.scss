@@ -1,9 +1,14 @@
+// ============================
+@import '../../commonComponent';
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #contact_page{
     padding-top: 152px;
     .contact_wrapper{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 48px;
+        
         .user_short_action{
             width: 100%;
             max-width: 524px;
@@ -25,7 +30,9 @@
                     padding: 12px;
                     border-radius: 50%;
                 }
-                .action_description{}
+                .action_description{
+
+                }
             }
         }
         .contact_form_wrapper{

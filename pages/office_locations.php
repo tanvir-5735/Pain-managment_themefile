@@ -30,35 +30,35 @@ get_header();
                 <ul class="office_location_map_list">
                     <li>
                         <div class="map_card">
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/8ed208891972d76fe555618ea7750d821ab163c2.png"
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/8ed208891972d76fe555618ea7750d821ab163c2.png"
                                 alt="map image">
                             <p>9711 3rd Ave, Brooklyn, NY 11209</p>
                         </div>
                     </li>
                     <li>
                         <div class="map_card">
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/8ed208891972d76fe555618ea7750d821ab163c2.png"
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/8ed208891972d76fe555618ea7750d821ab163c2.png"
                                 alt="map image">
                             <p>9711 3rd Ave, Brooklyn, NY 11209</p>
                         </div>
                     </li>
                     <li>
                         <div class="map_card">
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/8ed208891972d76fe555618ea7750d821ab163c2.png"
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/8ed208891972d76fe555618ea7750d821ab163c2.png"
                                 alt="map image">
                             <p>9711 3rd Ave, Brooklyn, NY 11209</p>
                         </div>
                     </li>
                     <li>
                         <div class="map_card">
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/8ed208891972d76fe555618ea7750d821ab163c2.png"
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/8ed208891972d76fe555618ea7750d821ab163c2.png"
                                 alt="map image">
                             <p>9711 3rd Ave, Brooklyn, NY 11209</p>
                         </div>
                     </li>
                     <li>
                         <div class="map_card">
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/8ed208891972d76fe555618ea7750d821ab163c2.png"
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/8ed208891972d76fe555618ea7750d821ab163c2.png"
                                 alt="map image">
                             <p>9711 3rd Ave, Brooklyn, NY 11209</p>
                         </div>

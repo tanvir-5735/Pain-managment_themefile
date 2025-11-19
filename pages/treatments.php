@@ -33,7 +33,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 1 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Joint_-Vascosupplementation.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Joint_-Vascosupplementation.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -57,7 +57,7 @@ get_header();
                         <div class="treatments_card"> <!--  card no 2 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Cervical_Thoracic_Lumbar_Medial_Branch_BlockMBB.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Cervical_Thoracic_Lumbar_Medial_Branch_BlockMBB.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -81,7 +81,7 @@ get_header();
                         <div class="treatments_card"> <!--  card no 3 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Cervical_-Thoracic_Lumbar_Epidural_Steroid_injection.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Cervical_-Thoracic_Lumbar_Epidural_Steroid_injection.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -105,7 +105,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 4 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Cervical_Thoracic_Lumbar-Facet_Joint_Injections.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Cervical_Thoracic_Lumbar-Facet_Joint_Injections.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -129,7 +129,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 5 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Minimally_Invasive_Varicose_Vein_Treatment.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Minimally_Invasive_Varicose_Vein_Treatment.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -153,7 +153,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 6 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Joint_Injection2.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Joint_Injection2.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -177,7 +177,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 7 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Kyphoplasty.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Kyphoplasty.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -201,7 +201,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 8 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Genicular_Nerve_Block.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Genicular_Nerve_Block.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -225,7 +225,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 9 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Endoscopic_Rhizotomy.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Endoscopic_Rhizotomy.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -249,7 +249,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 10 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Radiofrequency_Ablation-.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Radiofrequency_Ablation-.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -273,7 +273,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 11 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Peripheral_Nerve_Stimulation.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Peripheral_Nerve_Stimulation.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -297,7 +297,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 12 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Sacroiliac_Joint_Pain2.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Sacroiliac_Joint_Pain2.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -321,7 +321,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 13 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Sacroiliac_Joint_Pain2.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Endoscopic_discectomy.png" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -345,7 +345,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 14 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Trigger_Point_Joint_Injection.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Trigger_Point_Joint_Injection.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">
@@ -369,7 +369,7 @@ get_header();
                         <div class="treatments_card">  <!--  card no 15 -->
 
                             <div class="treatments_card_front">
-                                <div class="treatments_card_img"><img src="http://localhost/smohammed/wp-content/uploads/2025/11/Spinal_Cord_Stimulator_Trial_Implant.jpg" alt="">
+                                <div class="treatments_card_img"><img src="<?php echo wp_get_upload_dir()['url']; ?>/Spinal_Cord_Stimulator_Trial_Implant.jpg" alt="">
 
                                 </div>
                                 <div class="treatments_card_title">

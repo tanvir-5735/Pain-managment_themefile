@@ -20,7 +20,7 @@
                 <div class="specilist_card">
                     <div class="card_image">
 
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/75c.png" alt="doctor image">
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/75c.png" alt="doctor image">
 
                     </div>
                     <div class="card_content">
@@ -38,7 +38,7 @@
                 </div>
                 <div class="specilist_card">
                     <div class="card_image">
-                            <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/334d516b9.png" alt="doctor image">
+                            <img src="<?php echo wp_get_upload_dir()['url']; ?>/334d516b9.png" alt="doctor image">
                     </div>
                     <div class="card_content">
                         <h6> Dr. Salah Eldin Mohamed </h6>

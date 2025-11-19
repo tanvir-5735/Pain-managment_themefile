@@ -927,6 +927,34 @@ footer#footer .footerWrapper .footNote {
     gap: 30px;
   }
 }
+.myBtn span {
+  position: relative;
+  z-index: 2;
+}
+
+.traet_heading .treat_heading_wrapper {
+  width: 100%;
+  padding: 48px;
+  background-color: rgba(109, 195, 28, 0.1450980392);
+  border: 1px solid rgba(109, 195, 28, 0.6588235294);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.traet_heading .treat_heading_wrapper .line {
+  width: 100%;
+  max-width: 320px;
+  height: 5px;
+  background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+  border-radius: 50%;
+}
+.traet_heading .treat_heading_wrapper p {
+  width: 100%;
+}
+
 #about_practice {
   width: 100%;
   padding-top: 152px;
@@ -962,12 +990,47 @@ footer#footer .footerWrapper .footNote {
   text-align: center;
   padding: 32px 0;
 }
-#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper button {
-  border: none;
-  outline: none;
-  padding: 22px 118px;
-  background-color: var(--primary-color);
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper .myBtn {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px 80px;
+  background-color: #1E3070;
   color: white;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 #about_practice .about_wrapper_container .about_content_wraper .about_content_list {
   display: flex;
