@@ -1,3 +1,5 @@
+@import '../commonComponent';
+
 .contactBar {
     background-color: var(--primary-color);
     color: white;
@@ -23,6 +25,7 @@ header#header {
     top: 95px;
     left: 0;
     z-index: 999;
+
     nav {
         width: 100%;
         margin: 0 auto;
@@ -34,9 +37,7 @@ header#header {
             align-items: center;
 
             .navLogo {
-                width: 148px;
-                height: 148px;
-                border: 1px solid #213ea7;
+                aspect-ratio: 148/148;
 
                 img {
                     object-fit: cover;
@@ -82,17 +83,54 @@ header#header {
             }
 
             .nav_Buttons {
-                button {
-                    border: none;
-                    outline: none;
-                    background-color: var(--primary-color);
-                    color: white;
-                    padding: 20px 14px;
-                    border-radius: 8px;
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                justify-content: flex-end;
+
+                .myBtn {
+                    @include myBtn(20px, 33px);
+
+                    span {
+                        font-size: 18px;
+                    }
                 }
 
                 .mobile_menu_icon_wrapper {
                     display: none;
+                    border: 1px solid white;
+                    padding: 5px 5px 0 5px;
+                    box-shadow: inset 0 0 5px 0 #708df7b2;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+
+    #nav_menu_mobile {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        min-height: 100vh;
+        background-color: var(--primary-color);
+        z-index: 4;
+
+        .mobileMenuWrapper {
+            padding: 20px 25px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .mobile_nav_menu_list_item {
+                    border-bottom: 1px solid #213ea7;
+
+                    a {
+                        color: white;
+                    }
                 }
             }
         }
@@ -191,19 +229,12 @@ header#header {
                 }
 
                 .nav_Buttons {
-                    width: fit-content;
-                    display: flex;
-                    gap: 12px;
-                    align-items: center;
+                    .myBtn {
+                        @include myBtn(12px, 23px);
 
-                    button {
-                        border: none;
-                        outline: none;
-                        background-color: var(--primary-color);
-                        color: white;
-                        padding: 10px 14px;
-                        border-radius: 8px;
-                        font-size: 12px;
+                        span {
+                            font-size: 16px;
+                        }
                     }
 
                     .mobile_menu_icon_wrapper {
@@ -221,6 +252,7 @@ header#header {
             height: 100%;
             min-height: 100vh;
             background-color: var(--primary-color);
+            z-index: 4;
 
             .mobileMenuWrapper {
                 padding: 20px 25px;
@@ -228,10 +260,14 @@ header#header {
                 ul {
                     display: flex;
                     flex-direction: column;
-                    gap: 12px;
+                    gap: 20px;
 
-                    li {
+                    .mobile_nav_menu_list_item {
                         border-bottom: 1px solid #213ea7;
+
+                        a {
+                            color: white;
+                        }
                     }
                 }
             }
@@ -257,6 +293,7 @@ header#header {
                 display: flex;
                 align-items: center;
                 gap: 6px;
+
                 span {
                     font-size: 12px;
                 }
@@ -295,54 +332,15 @@ header#header {
                 .nav_menu {
                     display: none;
 
-                    .nav_menu_list {
-                        width: fit-content;
-                        background-color: #E9EAF1;
-                        border: 1px solid var(--primary-color);
-                        border-radius: 12px;
-                        display: flex;
-                        gap: 16px;
-
-                        .nav_menu_list_item {
-                            background-color: transparent;
-                            padding: 16px 22px;
-                            color: var(--primary-color);
-
-                            a {
-                                font-weight: 600;
-                            }
-
-                            border-radius: 8px;
-
-                            &:hover {
-                                background-color: var(--primary-color);
-                            }
-
-                            &:hover a {
-                                color: white;
-                            }
-                        }
-
-                        .nav_menu_list_item.active {
-                            background-color: var(--primary-color);
-                        }
-                    }
                 }
 
                 .nav_Buttons {
-                    width: fit-content;
-                    display: flex;
-                    gap: 12px;
-                    align-items: center;
+                    .myBtn {
+                        @include myBtn(12px, 23px);
 
-                    button {
-                        border: none;
-                        outline: none;
-                        background-color: var(--primary-color);
-                        color: white;
-                        padding: 10px 14px;
-                        border-radius: 8px;
-                        font-size: 12px;
+                        span {
+                            font-size: 16px;
+                        }
                     }
 
                     .mobile_menu_icon_wrapper {
@@ -361,16 +359,31 @@ header#header {
             min-height: 100vh;
             background-color: var(--primary-color);
 
-            .mobileMenuWrapper {
-                padding: 20px 25px;
+            #nav_menu_mobile {
+                position: absolute;
+                top: -5px;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                min-height: 100vh;
+                background-color: var(--primary-color);
+                z-index: 4;
 
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 12px;
+                .mobileMenuWrapper {
+                    padding: 20px 25px;
 
-                    li {
-                        border-bottom: 1px solid #213ea7;
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .mobile_nav_menu_list_item {
+                            border-bottom: 1px solid #213ea7;
+
+                            a {
+                                color: white;
+                            }
+                        }
                     }
                 }
             }
@@ -396,6 +409,7 @@ header#header {
                 display: flex;
                 align-items: center;
                 gap: 8px;
+
                 span {
                     font-size: 14px;
                 }
@@ -433,6 +447,7 @@ header#header {
 
                 .nav_menu {
                     display: block;
+
                     .nav_menu_list {
                         width: fit-content;
                         background-color: #E9EAF1;
@@ -443,7 +458,7 @@ header#header {
 
                         .nav_menu_list_item {
                             background-color: transparent;
-                            padding: 8px 12px;
+                            padding: 8px 8px;
                             color: var(--primary-color);
 
                             a {
@@ -469,47 +484,25 @@ header#header {
                 }
 
                 .nav_Buttons {
-                    width: fit-content;
                     display: flex;
                     gap: 12px;
                     align-items: center;
+                    justify-content: flex-end;
 
-                    button {
-                        border: none;
-                        outline: none;
-                        background-color: var(--primary-color);
-                        color: white;
-                        padding: 10px 14px;
-                        border-radius: 8px;
-                        font-size: 12px;
+                    .myBtn {
+                        @include myBtn(12px, 20px);
+
+                        span {
+                            font-size: 14px;
+                        }
                     }
 
                     .mobile_menu_icon_wrapper {
                         display: none;
-                    }
-                }
-            }
-        }
-
-        #nav_menu_mobile {
-            position: absolute;
-            top: -5px;
-            left: 0;
-            width: 50%;
-            height: 100%;
-            min-height: 100vh;
-            background-color: var(--primary-color);
-
-            .mobileMenuWrapper {
-                padding: 20px 25px;
-
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 12px;
-
-                    li {
-                        border-bottom: 1px solid #213ea7;
+                        border: 1px solid white;
+                        padding: 5px 5px 0 5px;
+                        box-shadow: inset 0 0 5px 0 #708df7b2;
+                        border-radius: 2px;
                     }
                 }
             }
@@ -535,6 +528,7 @@ header#header {
                 display: flex;
                 align-items: center;
                 gap: 8px;
+
                 span {
                     font-size: 16px;
                 }
@@ -717,18 +711,25 @@ header#header {
                 }
 
                 .nav_Buttons {
-                    button {
-                        border: none;
-                        outline: none;
-                        background-color: var(--primary-color);
-                        color: white;
-                        padding: 20px 14px;
-                        border-radius: 8px;
-                        font-size: 16px;
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .myBtn {
+                        @include myBtn(20px, 33px);
+
+                        span {
+                            font-size: 18px;
+                        }
                     }
 
                     .mobile_menu_icon_wrapper {
                         display: none;
+                        border: 1px solid white;
+                        padding: 5px 5px 0 5px;
+                        box-shadow: inset 0 0 5px 0 #708df7b2;
+                        border-radius: 2px;
                     }
                 }
             }

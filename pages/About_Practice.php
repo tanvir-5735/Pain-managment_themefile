@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About Practice
+ * Template Name: about_practice
  * Description: A clean About/Practice page template with hero, content, contact sidebar and optional map.
  *
  * Place this file in your theme and assign the "About Practice" template to the page in WP admin.

@@ -1,7 +1,7 @@
 
 <?php
 /**
- * Template Name: Patient_Education_page
+ * Template Name: patient_education
  * Description: A clean Patient_Education page template with hero, content, contact sidebar and optional map.
  */
 

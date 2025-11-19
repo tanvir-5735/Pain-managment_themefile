@@ -31,6 +31,7 @@ footer#footer {
             width: 100%;
             display: flex;
             justify-content: space-between;
+            gap: 20px;
 
             .footerCol1 {
                 display: flex;
@@ -44,6 +45,7 @@ footer#footer {
                         color: var(--primary-color);
                         padding: 5px 12px;
                     }
+                    p{padding: 10px 0;}
                 }
             }
 

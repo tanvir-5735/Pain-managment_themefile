@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Office_Locations_page
+ * Template Name: office_locations
  * Description: A clean Office_Locations page template with hero, content, contact sidebar and optional map.
  */
 

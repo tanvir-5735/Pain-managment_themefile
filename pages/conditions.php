@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Conditions_we_treat
+ * Template Name: conditions_we_treat
  * Description: A clean About/Practice page template with hero, content, contact sidebar and optional map.
  *
  * Place this file in your theme and assign the "About Practice" template to the page in WP admin.

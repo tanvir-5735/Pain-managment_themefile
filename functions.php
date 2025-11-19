@@ -1,11 +1,11 @@
 <?php
 // Function to enqueue Bootstrap CSS and JS
-function enqueue_bootstrap() {
-    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
-    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js', array(), '5.3.2', true);
-}
+// function enqueue_bootstrap() {
+//     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+//     wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js', array(), '5.3.2', true);
+// }
 
-add_action('wp_enqueue_scripts', 'enqueue_bootstrap');
+// add_action('wp_enqueue_scripts', 'enqueue_bootstrap');
 
 function mohammed_theme_scripts() {
     // Load JS file

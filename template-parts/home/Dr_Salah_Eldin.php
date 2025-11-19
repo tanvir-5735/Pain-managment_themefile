@@ -39,7 +39,11 @@
                         </p>
                     </div>
                     <div class="book_now_button">
-                        <button>Book Now </button>
+                        <a href="#">
+                            <div class="myBtn">
+                                <span>See All</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

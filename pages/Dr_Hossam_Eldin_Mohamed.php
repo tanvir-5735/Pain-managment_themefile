@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Dr._Hossam_Eldin_Mohamed
+ * Template Name: dr_hossam_eldin_mohamed
  * Description: A clean Dr._Hossam_Eldin_Mohamed page template with hero, content, contact sidebar and optional map.
  *
  * Place this file in your theme and assign the "About Practice" template to the page in WP admin.

@@ -1,3 +1,131 @@
+.myBtn span {
+  position: relative;
+  z-index: 2;
+}
+
+.traet_heading {
+  width: 100%;
+}
+.traet_heading .treat_heading_wrapper {
+  width: 100%;
+  padding: 48px;
+  background-color: rgba(109, 195, 28, 0.1450980392);
+  border: 1px solid rgba(109, 195, 28, 0.6588235294);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.traet_heading .treat_heading_wrapper h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 68px;
+}
+.traet_heading .treat_heading_wrapper .line {
+  width: 100%;
+  max-width: 320px;
+  height: 5px;
+  background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+  border-radius: 50%;
+}
+.traet_heading .treat_heading_wrapper p {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media screen and (max-width: 576px) {
+  .traet_heading .treat_heading_wrapper {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(109, 195, 28, 0.1450980392);
+    border: 1px solid rgba(109, 195, 28, 0.6588235294);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .traet_heading .treat_heading_wrapper h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 36px;
+  }
+  .traet_heading .treat_heading_wrapper .line {
+    width: 100%;
+    max-width: 320px;
+    height: 5px;
+    background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  .traet_heading .treat_heading_wrapper p {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 576px) {
+  .traet_heading .treat_heading_wrapper {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(109, 195, 28, 0.1450980392);
+    border: 1px solid rgba(109, 195, 28, 0.6588235294);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .traet_heading .treat_heading_wrapper h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 36px;
+  }
+  .traet_heading .treat_heading_wrapper .line {
+    width: 100%;
+    max-width: 320px;
+    height: 5px;
+    background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  .traet_heading .treat_heading_wrapper p {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .traet_heading .treat_heading_wrapper {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(109, 195, 28, 0.1450980392);
+    border: 1px solid rgba(109, 195, 28, 0.6588235294);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .traet_heading .treat_heading_wrapper h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 48px;
+  }
+  .traet_heading .treat_heading_wrapper .line {
+    width: 100%;
+    max-width: 220px;
+    height: 5px;
+    background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  .traet_heading .treat_heading_wrapper p {
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 40%;
+  }
+}
 .contactBar {
   background-color: var(--primary-color);
   color: white;
@@ -33,9 +161,7 @@ header#header nav .nav_wrapper {
   align-items: center;
 }
 header#header nav .nav_wrapper .navLogo {
-  width: 148px;
-  height: 148px;
-  border: 1px solid #213ea7;
+  aspect-ratio: 148/148;
 }
 header#header nav .nav_wrapper .navLogo img {
   -o-object-fit: cover;
@@ -71,16 +197,83 @@ header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item:hove
 header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item.active {
   background-color: var(--primary-color);
 }
-header#header nav .nav_wrapper .nav_Buttons button {
-  border: none;
-  outline: none;
-  background-color: var(--primary-color);
+header#header nav .nav_wrapper .nav_Buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+}
+header#header nav .nav_wrapper .nav_Buttons .myBtn {
+  display: inline-block;
+  padding: 20px 33px;
+  background-color: #1E3070;
   color: white;
-  padding: 20px 14px;
   border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+header#header nav .nav_wrapper .nav_Buttons .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+header#header nav .nav_wrapper .nav_Buttons .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+header#header nav .nav_wrapper .nav_Buttons .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+header#header nav .nav_wrapper .nav_Buttons .myBtn span {
+  font-size: 18px;
 }
 header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
   display: none;
+  border: 1px solid white;
+  padding: 5px 5px 0 5px;
+  box-shadow: inset 0 0 5px 0 rgba(112, 141, 247, 0.6980392157);
+  border-radius: 2px;
+}
+header#header #nav_menu_mobile {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  z-index: 4;
+}
+header#header #nav_menu_mobile .mobileMenuWrapper {
+  padding: 20px 25px;
+}
+header#header #nav_menu_mobile .mobileMenuWrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+header#header #nav_menu_mobile .mobileMenuWrapper ul .mobile_nav_menu_list_item {
+  border-bottom: 1px solid #213ea7;
+}
+header#header #nav_menu_mobile .mobileMenuWrapper ul .mobile_nav_menu_list_item a {
+  color: white;
 }
 
 @media screen and (max-width: 576px) {
@@ -161,21 +354,46 @@ header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
   header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item.active {
     background-color: var(--primary-color);
   }
-  header#header nav .nav_wrapper .nav_Buttons {
-    width: -moz-fit-content;
-    width: fit-content;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-  header#header nav .nav_wrapper .nav_Buttons button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
+  header#header nav .nav_wrapper .nav_Buttons .myBtn {
+    display: inline-block;
+    padding: 12px 23px;
+    background-color: #1E3070;
     color: white;
-    padding: 10px 14px;
     border-radius: 8px;
-    font-size: 12px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn span {
+    font-size: 16px;
   }
   header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
     display: block;
@@ -188,6 +406,7 @@ header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
     height: 100%;
     min-height: 100vh;
     background-color: var(--primary-color);
+    z-index: 4;
   }
   header#header #nav_menu_mobile .mobileMenuWrapper {
     padding: 20px 25px;
@@ -195,10 +414,13 @@ header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
   header#header #nav_menu_mobile .mobileMenuWrapper ul {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
   }
-  header#header #nav_menu_mobile .mobileMenuWrapper ul li {
+  header#header #nav_menu_mobile .mobileMenuWrapper ul .mobile_nav_menu_list_item {
     border-bottom: 1px solid #213ea7;
+  }
+  header#header #nav_menu_mobile .mobileMenuWrapper ul .mobile_nav_menu_list_item a {
+    color: white;
   }
 }
 @media screen and (min-width: 576px) {
@@ -252,48 +474,46 @@ header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
   header#header nav .nav_wrapper .nav_menu {
     display: none;
   }
-  header#header nav .nav_wrapper .nav_menu .nav_menu_list {
-    width: -moz-fit-content;
-    width: fit-content;
-    background-color: #E9EAF1;
-    border: 1px solid var(--primary-color);
-    border-radius: 12px;
-    display: flex;
-    gap: 16px;
-  }
-  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item {
-    background-color: transparent;
-    padding: 16px 22px;
-    color: var(--primary-color);
-    border-radius: 8px;
-  }
-  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item a {
-    font-weight: 600;
-  }
-  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item:hover {
-    background-color: var(--primary-color);
-  }
-  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item:hover a {
+  header#header nav .nav_wrapper .nav_Buttons .myBtn {
+    display: inline-block;
+    padding: 12px 23px;
+    background-color: #1E3070;
     color: white;
-  }
-  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item.active {
-    background-color: var(--primary-color);
-  }
-  header#header nav .nav_wrapper .nav_Buttons {
-    width: -moz-fit-content;
-    width: fit-content;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-  header#header nav .nav_wrapper .nav_Buttons button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px 14px;
     border-radius: 8px;
-    font-size: 12px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn span {
+    font-size: 16px;
   }
   header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
     display: block;
@@ -307,16 +527,29 @@ header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
     min-height: 100vh;
     background-color: var(--primary-color);
   }
-  header#header #nav_menu_mobile .mobileMenuWrapper {
+  header#header #nav_menu_mobile #nav_menu_mobile {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    z-index: 4;
+  }
+  header#header #nav_menu_mobile #nav_menu_mobile .mobileMenuWrapper {
     padding: 20px 25px;
   }
-  header#header #nav_menu_mobile .mobileMenuWrapper ul {
+  header#header #nav_menu_mobile #nav_menu_mobile .mobileMenuWrapper ul {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
   }
-  header#header #nav_menu_mobile .mobileMenuWrapper ul li {
+  header#header #nav_menu_mobile #nav_menu_mobile .mobileMenuWrapper ul .mobile_nav_menu_list_item {
     border-bottom: 1px solid #213ea7;
+  }
+  header#header #nav_menu_mobile #nav_menu_mobile .mobileMenuWrapper ul .mobile_nav_menu_list_item a {
+    color: white;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -381,7 +614,7 @@ header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
   }
   header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item {
     background-color: transparent;
-    padding: 8px 12px;
+    padding: 8px 8px;
     color: var(--primary-color);
     border-radius: 8px;
   }
@@ -399,43 +632,58 @@ header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
     background-color: var(--primary-color);
   }
   header#header nav .nav_wrapper .nav_Buttons {
-    width: -moz-fit-content;
-    width: fit-content;
     display: flex;
     gap: 12px;
     align-items: center;
+    justify-content: flex-end;
   }
-  header#header nav .nav_wrapper .nav_Buttons button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
+  header#header nav .nav_wrapper .nav_Buttons .myBtn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #1E3070;
     color: white;
-    padding: 10px 14px;
     border-radius: 8px;
-    font-size: 12px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn span {
+    font-size: 14px;
   }
   header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
     display: none;
-  }
-  header#header #nav_menu_mobile {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    min-height: 100vh;
-    background-color: var(--primary-color);
-  }
-  header#header #nav_menu_mobile .mobileMenuWrapper {
-    padding: 20px 25px;
-  }
-  header#header #nav_menu_mobile .mobileMenuWrapper ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  header#header #nav_menu_mobile .mobileMenuWrapper ul li {
-    border-bottom: 1px solid #213ea7;
+    border: 1px solid white;
+    padding: 5px 5px 0 5px;
+    box-shadow: inset 0 0 5px 0 rgba(112, 141, 247, 0.6980392157);
+    border-radius: 2px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -608,17 +856,59 @@ header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
   header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item.active {
     background-color: var(--primary-color);
   }
-  header#header nav .nav_wrapper .nav_Buttons button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
+  header#header nav .nav_wrapper .nav_Buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn {
+    display: inline-block;
+    padding: 20px 33px;
+    background-color: #1E3070;
     color: white;
-    padding: 20px 14px;
     border-radius: 8px;
-    font-size: 16px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  header#header nav .nav_wrapper .nav_Buttons .myBtn span {
+    font-size: 18px;
   }
   header#header nav .nav_wrapper .nav_Buttons .mobile_menu_icon_wrapper {
     display: none;
+    border: 1px solid white;
+    padding: 5px 5px 0 5px;
+    box-shadow: inset 0 0 5px 0 rgba(112, 141, 247, 0.6980392157);
+    border-radius: 2px;
   }
 }
 footer#footer {
@@ -651,6 +941,7 @@ footer#footer .footerWrapper .footerContent {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 footer#footer .footerWrapper .footerContent .footerCol1 {
   display: flex;
@@ -662,6 +953,9 @@ footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
   background-color: white;
   color: var(--primary-color);
   padding: 5px 12px;
+}
+footer#footer .footerWrapper .footerContent .footerCol1 .footerContact p {
+  padding: 10px 0;
 }
 footer#footer .footerWrapper .footNote {
   display: flex;
@@ -962,34 +1256,6 @@ footer#footer .footerWrapper .footNote {
   font-weight: 700;
 }
 
-.myBtn span {
-  position: relative;
-  z-index: 2;
-}
-
-.traet_heading .treat_heading_wrapper {
-  width: 100%;
-  padding: 48px;
-  background-color: rgba(109, 195, 28, 0.1450980392);
-  border: 1px solid rgba(109, 195, 28, 0.6588235294);
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.traet_heading .treat_heading_wrapper .line {
-  width: 100%;
-  max-width: 320px;
-  height: 5px;
-  background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
-  border-radius: 50%;
-}
-.traet_heading .treat_heading_wrapper p {
-  width: 100%;
-}
-
 #homeBanner {
   width: 100%;
   height: calc(100vh - 100px);
@@ -1004,12 +1270,30 @@ footer#footer .footerWrapper .footNote {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+#homeBanner .banner_content_wrapper .banner_video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#homeBanner .banner_content_wrapper .banner_video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #homeBanner .banner_content_wrapper .banner_content {
   width: 100%;
   max-width: 650px;
+  padding: 5px;
   text-align: center;
   color: white;
+  position: relative;
+  z-index: 2;
 }
 #homeBanner .banner_content_wrapper .banner_content h1 {
   font-size: 74px;
@@ -1018,6 +1302,7 @@ footer#footer .footerWrapper .footNote {
 }
 #homeBanner .banner_content_wrapper .banner_content p {
   padding: 20px 0 40px 0;
+  font-size: 16px;
 }
 #homeBanner .banner_content_wrapper .banner_content .btnWrapper {
   display: flex;
@@ -1098,42 +1383,55 @@ footer#footer .footerWrapper .footNote {
 #aboutPractice .aboutPracticeWrapper .practiceContent h2:nth-child(2) {
   color: green;
 }
-#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper button {
-  border: none;
-  outline: none;
-  background-color: var(--primary-color);
+#aboutPractice .aboutPracticeWrapper .practiceContent h5 {
+  font-size: 24px;
+  padding: 32px 0 16px 0;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .myBtn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #1E3070;
   color: white;
-  padding: 14px 20px;
   border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 #consitionWeTreat {
   width: 100%;
 }
-#consitionWeTreat .conditionWeTreatWrapper .heading {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 48px;
-  border: 1px solid #6DC31C;
-  border-radius: 12px;
-  background-color: #F0F9E8;
-  margin-bottom: 48px;
-}
-#consitionWeTreat .conditionWeTreatWrapper .heading .title {
-  width: 20%;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-#consitionWeTreat .conditionWeTreatWrapper .heading .lineWrapper {
-  width: 20%;
-  height: 5px;
-  background: radial-gradient(green, #00814b, white, transparent);
-  background-size: 100% 100%;
-}
-#consitionWeTreat .conditionWeTreatWrapper .heading .desc {
-  width: 60%;
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary {
+  padding-top: 50px;
 }
 #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper {
   display: grid;
@@ -1169,6 +1467,12 @@ footer#footer .footerWrapper .footNote {
 #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
   height: 300px;
   filter: grayscale(0);
+}
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
+  width: 100%;
+  font-size: 32px;
+  padding: 5px;
+  text-align: left;
 }
 #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn {
   width: 100%;
@@ -1209,15 +1513,45 @@ footer#footer .footerWrapper .footNote {
   font-size: 64px;
 }
 #doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .desc {
-  padding: 0;
+  padding: 20px 0 20px 0;
 }
-#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button button {
-  padding: 20px 80px;
-  background-color: var(--primary-color);
+#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button .myBtn {
+  display: inline-block;
+  padding: 12px 33px;
+  background-color: #1E3070;
   color: white;
-  border: none;
-  outline: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .book_now_button .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
   width: 100%;
@@ -1369,27 +1703,84 @@ footer#footer .footerWrapper .footNote {
   #homeBanner .banner_content_wrapper {
     width: 100%;
     height: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  #homeBanner .banner_content_wrapper .banner_video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #homeBanner .banner_content_wrapper .banner_video video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   #homeBanner .banner_content_wrapper .banner_content {
     width: 100%;
     max-width: 650px;
+    padding: 5px;
     text-align: center;
     color: white;
+    position: relative;
+    z-index: 2;
   }
   #homeBanner .banner_content_wrapper .banner_content h1 {
     font-size: 44px;
     font-weight: 600;
   }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
+  #homeBanner .banner_content_wrapper .banner_content p {
+    padding: 20px 0 40px 0;
+    font-size: 16px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1E3070;
     color: white;
-    padding: 20px 14px;
     border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
   }
   #aboutPractice {
     width: 100%;
@@ -1521,7 +1912,7 @@ footer#footer .footerWrapper .footNote {
     font-size: 44px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .desc {
-    padding: 0;
+    padding: 20px 0 20px 0;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
     width: 100%;
@@ -1666,24 +2057,81 @@ footer#footer .footerWrapper .footNote {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+  #homeBanner .banner_content_wrapper .banner_video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #homeBanner .banner_content_wrapper .banner_video video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #homeBanner .banner_content_wrapper .banner_content {
     width: 100%;
     max-width: 650px;
+    padding: 5px;
     text-align: center;
     color: white;
+    position: relative;
+    z-index: 2;
   }
   #homeBanner .banner_content_wrapper .banner_content h1 {
-    font-size: 74px;
+    font-size: 44px;
     font-weight: 600;
   }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
+  #homeBanner .banner_content_wrapper .banner_content p {
+    padding: 20px 0 40px 0;
+    font-size: 16px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1E3070;
     color: white;
-    padding: 20px 14px;
     border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
   }
   #aboutPractice {
     width: 100%;
@@ -1722,13 +2170,48 @@ footer#footer .footerWrapper .footNote {
   #aboutPractice .aboutPracticeWrapper .practiceContent h2:nth-child(2) {
     color: green;
   }
-  #aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
+  #aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .btnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  #aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .btnWrapper .myBtn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1E3070;
     color: white;
-    padding: 14px 20px;
     border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  #aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .btnWrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .btnWrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper .btnWrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
   }
   #consitionWeTreat {
     width: 100%;
@@ -1823,7 +2306,7 @@ footer#footer .footerWrapper .footNote {
     font-size: 44px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .desc {
-    padding: 0;
+    padding: 20px 0 20px 0;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
     width: 100%;
@@ -1968,24 +2451,81 @@ footer#footer .footerWrapper .footNote {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+  #homeBanner .banner_content_wrapper .banner_video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #homeBanner .banner_content_wrapper .banner_video video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #homeBanner .banner_content_wrapper .banner_content {
     width: 100%;
     max-width: 650px;
+    padding: 5px;
     text-align: center;
     color: white;
+    position: relative;
+    z-index: 2;
   }
   #homeBanner .banner_content_wrapper .banner_content h1 {
-    font-size: 74px;
+    font-size: 44px;
     font-weight: 600;
   }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
+  #homeBanner .banner_content_wrapper .banner_content p {
+    padding: 20px 0 40px 0;
+    font-size: 16px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1E3070;
     color: white;
-    padding: 20px 14px;
     border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
   }
   #aboutPractice {
     width: 100%;
@@ -2119,7 +2659,7 @@ footer#footer .footerWrapper .footNote {
     font-size: 44px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_text_content .text_content_wrapper .desc {
-    padding: 0;
+    padding: 20px 0 20px 0;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
     width: 100%;
@@ -2262,27 +2802,84 @@ footer#footer .footerWrapper .footNote {
   #homeBanner .banner_content_wrapper {
     width: 100%;
     height: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  #homeBanner .banner_content_wrapper .banner_video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #homeBanner .banner_content_wrapper .banner_video video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   #homeBanner .banner_content_wrapper .banner_content {
     width: 100%;
     max-width: 650px;
+    padding: 5px;
     text-align: center;
     color: white;
+    position: relative;
+    z-index: 2;
   }
   #homeBanner .banner_content_wrapper .banner_content h1 {
-    font-size: 74px;
+    font-size: 44px;
     font-weight: 600;
   }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
+  #homeBanner .banner_content_wrapper .banner_content p {
+    padding: 20px 0 40px 0;
+    font-size: 16px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1E3070;
     color: white;
-    padding: 20px 14px;
     border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
   }
   #aboutPractice {
     width: 100%;
@@ -2522,24 +3119,81 @@ footer#footer .footerWrapper .footNote {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+  #homeBanner .banner_content_wrapper .banner_video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #homeBanner .banner_content_wrapper .banner_video video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #homeBanner .banner_content_wrapper .banner_content {
     width: 100%;
     max-width: 650px;
+    padding: 5px;
     text-align: center;
     color: white;
+    position: relative;
+    z-index: 2;
   }
   #homeBanner .banner_content_wrapper .banner_content h1 {
-    font-size: 74px;
+    font-size: 44px;
     font-weight: 600;
   }
-  #homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
+  #homeBanner .banner_content_wrapper .banner_content p {
+    padding: 20px 0 40px 0;
+    font-size: 16px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1E3070;
     color: white;
-    padding: 20px 14px;
     border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
   }
   #aboutPractice {
     width: 100%;
@@ -2933,6 +3587,9 @@ footer#footer .footerWrapper .footNote {
   z-index: 2;
 }
 
+.traet_heading {
+  width: 100%;
+}
 .traet_heading .treat_heading_wrapper {
   width: 100%;
   padding: 48px;
@@ -2945,6 +3602,11 @@ footer#footer .footerWrapper .footNote {
   flex-wrap: wrap;
   gap: 20px;
 }
+.traet_heading .treat_heading_wrapper h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 68px;
+}
 .traet_heading .treat_heading_wrapper .line {
   width: 100%;
   max-width: 320px;
@@ -2953,9 +3615,101 @@ footer#footer .footerWrapper .footNote {
   border-radius: 50%;
 }
 .traet_heading .treat_heading_wrapper p {
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
+@media screen and (max-width: 576px) {
+  .traet_heading .treat_heading_wrapper {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(109, 195, 28, 0.1450980392);
+    border: 1px solid rgba(109, 195, 28, 0.6588235294);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .traet_heading .treat_heading_wrapper h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 36px;
+  }
+  .traet_heading .treat_heading_wrapper .line {
+    width: 100%;
+    max-width: 320px;
+    height: 5px;
+    background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  .traet_heading .treat_heading_wrapper p {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 576px) {
+  .traet_heading .treat_heading_wrapper {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(109, 195, 28, 0.1450980392);
+    border: 1px solid rgba(109, 195, 28, 0.6588235294);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .traet_heading .treat_heading_wrapper h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 36px;
+  }
+  .traet_heading .treat_heading_wrapper .line {
+    width: 100%;
+    max-width: 320px;
+    height: 5px;
+    background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  .traet_heading .treat_heading_wrapper p {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .traet_heading .treat_heading_wrapper {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(109, 195, 28, 0.1450980392);
+    border: 1px solid rgba(109, 195, 28, 0.6588235294);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .traet_heading .treat_heading_wrapper h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 48px;
+  }
+  .traet_heading .treat_heading_wrapper .line {
+    width: 100%;
+    max-width: 220px;
+    height: 5px;
+    background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  .traet_heading .treat_heading_wrapper p {
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 40%;
+  }
+}
 h1 {
   font-size: clamp(2rem, 5vw, 4rem);
   color: white;
@@ -2980,19 +3734,37 @@ p {
   margin: 0 0 0 0;
 }
 
+@font-face {
+  font-family: "MyFont1";
+  src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MyFont2";
+  src: url("../fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --primary-color: #1E3070;
+  --ff-primary: "MyFont1", sans-serif;
+  --ff-secondary: "MyFont2", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--ff-primary);
 }
 
 body {
   width: 100%;
   background-color: white !important;
+  font-family: var(--ff-primary);
 }
 
 .hidden {

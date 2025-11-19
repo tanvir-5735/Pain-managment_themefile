@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Treatments_page
+ * Template Name: treatments
  * Description: A clean Treatments page template with hero, content, contact sidebar and optional map.
  */
 

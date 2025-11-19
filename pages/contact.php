@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Contact_page
+ * Template Name: contact_page
  * Description: A clean Contact  template with hero, content, contact sidebar and optional map.
  */
 
