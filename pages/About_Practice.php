@@ -28,17 +28,24 @@ get_header();
                 <div class="about_content">
                     <h3>About Us</h3>
                     <p>Welcome to our Physical Medicine & Rehabilitation and Pain Management practice, where care begins with listening. We believe that every patient deserves time, attention, and understanding — because lasting relief starts with truly knowing your story.</p>
+                    <br>
                     <p>
                         Here, you’ll never feel rushed or unheard. We take the time to listen to your concerns, understand your symptoms, and learn how pain affects your daily life. Together, we build a plan that’s personalized to your goals, not just your diagnosis.
                     </p>
+                    <br>
                     <p>
                         Our approach combines medical expertise with compassion. We discuss every option with you clearly and honestly, helping you make the choices that feel right for you. Whether we’re restoring movement, managing pain, or helping you regain strength and confidence, our focus remains on you — the person, not just the patient.
                     </p>
+                    <br>
                     <p>
                         We believe healing works best as a partnership. Our role is to guide and support you with the best possible care, while you remain the captain of your own journey. Our mission is simple: to help you move better, feel better, and live better — one patient, one story, one step at a time.
                     </p>
                     <div class="btn_wrapper">
-                        <button>Meet our Providers</button>
+                        <a href="#">
+                            <div class="myBtn">
+                                <span>Meet our Providers</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="about_content_list">

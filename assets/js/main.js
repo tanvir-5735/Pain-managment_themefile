@@ -15,3 +15,32 @@ mobile_menu_icon_close.addEventListener('click' , ()=>{
     mobile_menu_icon.classList.remove('hidden');
 
 });
+// =====patient education======
+const education_select = document.getElementById('exercise');
+const exercise_document_wrapper = document.querySelector('#exercise_document_wrapper');
+const faq = document.getElementById('faq');
+
+const FrequentQA_content_list_item = document.querySelectorAll('.FrequentQA_content_list_item');
+
+console.log(FrequentQA_content_list_item);
+
+
+education_select.addEventListener('change', (e) => {
+    const selectedValue = e.target.value;
+    console.log(selectedValue,faq,exercise_document_wrapper);
+
+    if (selectedValue === "FAQ") {
+        exercise_document_wrapper.classList.add("hidden");
+        faq.classList.remove("hidden");
+    } else {
+        exercise_document_wrapper.classList.remove("hidden");
+        faq.classList.add("hidden");
+    }
+});
+
+
+FrequentQA_content_list_item.forEach((elem,idx)=>{
+    elem.addEventListener('click' , (e)=>{
+        console.log(e.currentTarget);
+    })
+});

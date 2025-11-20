@@ -17,9 +17,8 @@
                 background-color: transparent;
             }
         }
-        .exercise_document_wrapper{
+        #exercise_document_wrapper{
             width: 100%;
-            margin-top: 110px;
             padding: 38px;
             display: flex;
             align-items: center;
@@ -39,7 +38,11 @@
         }
         
     }
-    // ================================================
+    
+}
+.hidden{display: none !important;}
+
+// ================================================
     .FrequentQA_part{
         width: 100%;
         .FrequentQA_heading_wrapper{
@@ -82,4 +85,3 @@
         }
     }
     // ================================================
-}

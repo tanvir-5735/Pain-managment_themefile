@@ -10,6 +10,7 @@
 @import 'commonComponent';
 @import 'typography';
 @import 'variables';
+@import 'component/treatment_we_treat';
 
 @font-face {
     font-family: "MyFont1";
@@ -53,7 +54,11 @@ body{
     margin: 0 auto;
 
 }
-
+.breadCrumb{
+    width: 100%;
+    border: 1px solid #fcb9b9a2;
+    padding: 20px 0;
+}
 ul,
 ol {
     margin: 0;
@@ -68,7 +73,7 @@ a {
 
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #Condition_page{
-    padding-top: 102px;
+    padding-top: 152px;
 }
 
 

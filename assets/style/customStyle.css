@@ -8,8 +8,10 @@
 }
 .traet_heading .treat_heading_wrapper {
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 48px;
-  background-color: rgba(109, 195, 28, 0.1450980392);
+  background-color: rgb(228, 250, 214);
   border: 1px solid rgba(109, 195, 28, 0.6588235294);
   border-radius: 10px;
   display: flex;
@@ -17,6 +19,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  position: relative;
+  z-index: 3;
 }
 .traet_heading .treat_heading_wrapper h2 {
   width: -moz-fit-content;
@@ -39,8 +43,6 @@
   .traet_heading .treat_heading_wrapper {
     width: 100%;
     padding: 20px;
-    background-color: rgba(109, 195, 28, 0.1450980392);
-    border: 1px solid rgba(109, 195, 28, 0.6588235294);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -69,8 +71,6 @@
   .traet_heading .treat_heading_wrapper {
     width: 100%;
     padding: 20px;
-    background-color: rgba(109, 195, 28, 0.1450980392);
-    border: 1px solid rgba(109, 195, 28, 0.6588235294);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -99,8 +99,6 @@
   .traet_heading .treat_heading_wrapper {
     width: 100%;
     padding: 20px;
-    background-color: rgba(109, 195, 28, 0.1450980392);
-    border: 1px solid rgba(109, 195, 28, 0.6588235294);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -1233,18 +1231,50 @@ footer#footer .footerWrapper .footNote {
   text-align: center;
   padding: 32px 0;
 }
-#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper button {
-  border: none;
-  outline: none;
-  padding: 22px 118px;
-  background-color: var(--primary-color);
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper .myBtn {
+  display: inline-block;
+  padding: 12px 40px;
+  background-color: #1E3070;
   color: white;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 #about_practice .about_wrapper_container .about_content_wraper .about_content_list {
   display: flex;
   flex-direction: column;
   gap: 32px;
   list-style-type: none;
+  margin-top: 30px;
 }
 #about_practice .about_wrapper_container .about_content_wraper .about_content_list li {
   display: flex;
@@ -1253,7 +1283,7 @@ footer#footer .footerWrapper .footNote {
 }
 #about_practice .about_wrapper_container .about_content_wraper .about_content_list li h4 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 #homeBanner {
@@ -3450,9 +3480,8 @@ footer#footer .footerWrapper .footNote {
   outline: none;
   background-color: transparent;
 }
-#PatientEducation .Patient_Education_wrapper .exercise_document_wrapper {
+#PatientEducation .Patient_Education_wrapper #exercise_document_wrapper {
   width: 100%;
-  margin-top: 110px;
   padding: 38px;
   display: flex;
   align-items: center;
@@ -3460,39 +3489,44 @@ footer#footer .footerWrapper .footNote {
   background-color: rgba(233, 234, 241, 0.4509803922);
   border-radius: 32px;
 }
-#PatientEducation .Patient_Education_wrapper .exercise_document_wrapper .exercise_document_item {
+#PatientEducation .Patient_Education_wrapper #exercise_document_wrapper .exercise_document_item {
   width: 100%;
   max-width: 873px;
   aspect-ratio: 873/1319;
 }
-#PatientEducation .Patient_Education_wrapper .exercise_document_wrapper .exercise_document_item img {
+#PatientEducation .Patient_Education_wrapper #exercise_document_wrapper .exercise_document_item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#PatientEducation .FrequentQA_part {
+
+.hidden {
+  display: none !important;
+}
+
+.FrequentQA_part {
   width: 100%;
 }
-#PatientEducation .FrequentQA_part .FrequentQA_heading_wrapper {
+.FrequentQA_part .FrequentQA_heading_wrapper {
   text-align: center;
   padding: 48px;
   background-color: rgba(138, 207, 73, 0.3019607843);
   border: 1px solid #8ACF49;
   border-radius: 10px;
 }
-#PatientEducation .FrequentQA_part .FrequentQA_heading_wrapper h4 {
+.FrequentQA_part .FrequentQA_heading_wrapper h4 {
   font-size: 32px;
 }
-#PatientEducation .FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row {
   width: 100%;
 }
-#PatientEducation .FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-#PatientEducation .FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item {
   border: 2px solid gray;
   width: 100%;
   display: flex;
@@ -3501,12 +3535,12 @@ footer#footer .footerWrapper .footNote {
   padding: 30px 57px;
   border-radius: 20px;
 }
-#PatientEducation .FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .FrequentQA_content_list_item_text {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .FrequentQA_content_list_item_text {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-#PatientEducation .FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .FrequentQA_content_list_item_text span {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .FrequentQA_content_list_item_text span {
   font-size: 60px;
 }
 #contact_page {
@@ -3593,8 +3627,10 @@ footer#footer .footerWrapper .footNote {
 }
 .traet_heading .treat_heading_wrapper {
   width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 48px;
-  background-color: rgba(109, 195, 28, 0.1450980392);
+  background-color: rgb(228, 250, 214);
   border: 1px solid rgba(109, 195, 28, 0.6588235294);
   border-radius: 10px;
   display: flex;
@@ -3602,6 +3638,8 @@ footer#footer .footerWrapper .footNote {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  position: relative;
+  z-index: 3;
 }
 .traet_heading .treat_heading_wrapper h2 {
   width: -moz-fit-content;
@@ -3624,8 +3662,6 @@ footer#footer .footerWrapper .footNote {
   .traet_heading .treat_heading_wrapper {
     width: 100%;
     padding: 20px;
-    background-color: rgba(109, 195, 28, 0.1450980392);
-    border: 1px solid rgba(109, 195, 28, 0.6588235294);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -3654,8 +3690,6 @@ footer#footer .footerWrapper .footNote {
   .traet_heading .treat_heading_wrapper {
     width: 100%;
     padding: 20px;
-    background-color: rgba(109, 195, 28, 0.1450980392);
-    border: 1px solid rgba(109, 195, 28, 0.6588235294);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -3684,8 +3718,6 @@ footer#footer .footerWrapper .footNote {
   .traet_heading .treat_heading_wrapper {
     width: 100%;
     padding: 20px;
-    background-color: rgba(109, 195, 28, 0.1450980392);
-    border: 1px solid rgba(109, 195, 28, 0.6588235294);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -3735,6 +3767,73 @@ p {
   margin: 0 0 0 0;
 }
 
+#treatment_we_treat {
+  width: 100%;
+  padding: 152px 0 50px 0;
+}
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper {
+  width: 100%;
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card {
+  background-color: transparent;
+  width: 100%;
+  max-width: 425px;
+  aspect-ratio: 425/445;
+  perspective: 1000px;
+  padding: 2px;
+  margin: 10px;
+}
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card .flip-card-inner .flip-card-front,
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  padding: 20px;
+}
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card .flip-card-inner .flip-card-front {
+  background-color: #1E3070;
+}
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card .flip-card-inner .flip-card-front h4, #treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card .flip-card-inner .flip-card-front h2, #treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card .flip-card-inner .flip-card-front p {
+  display: inline-block;
+  width: 100%;
+  max-width: 264px;
+  color: white;
+}
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card .flip-card-inner .flip-card-front h4 {
+  font-size: 32px;
+  word-wrap: break-word;
+}
+#treatment_we_treat .treatment_card_continer .treatment_card_wrapper .flip-card .flip-card-inner .flip-card-back {
+  background-color: #344CA3;
+  transform: rotateY(180deg);
+}
+
 @font-face {
   font-family: "MyFont1";
   src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
@@ -3778,6 +3877,12 @@ body {
   margin: 0 auto;
 }
 
+.breadCrumb {
+  width: 100%;
+  border: 1px solid rgba(252, 185, 185, 0.6352941176);
+  padding: 20px 0;
+}
+
 ul,
 ol {
   margin: 0;
@@ -3791,5 +3896,5 @@ a {
 }
 
 #Condition_page {
-  padding-top: 102px;
+  padding-top: 152px;
 }/*# sourceMappingURL=customStyle.css.map */

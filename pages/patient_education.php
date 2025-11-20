@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Template Name: patient_education
@@ -18,17 +17,21 @@ get_header();
             <div class="selectOption">
                 <select name="exercise" id="exercise">
                     <option value="Home exercise program">Home exercise program 1</option>
-                    <option value="Home exercise program">Home exercise program 2</option>
+                    <option value="FAQ">Home exercise program 2</option>
                     <option value="Home exercise program">Home exercise program 3</option>
                 </select>
             </div>
-            <div class="exercise_document_wrapper">
+            <div id="exercise_document_wrapper" class="">
                 <div class="exercise_document_item">
-                    <img src="http://localhost/smohamed/wp-content/uploads/2025/11/image-5.png" alt="exercise_document_item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/petient_doc_1.png"
+                        alt="Cancer Pain" class="glaryImage">
                 </div>
             </div>
+            <div id="faq" class="hidden">
+                <?php get_template_part('template-parts/frequent_qa', 'FrequentQA'); ?>
+            </div>
         </div>
-        <?php get_template_part('template-parts/FrequentQA', 'FrequentQA'); ?>
+
     </div>
 </section>
 

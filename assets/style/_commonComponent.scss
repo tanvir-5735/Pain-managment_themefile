@@ -50,8 +50,9 @@
     width: 100%;
     .treat_heading_wrapper {
         width: 100%;
+        height: fit-content;
         padding: 48px;
-        background-color: #6dc31c25;
+        background-color: rgb(228, 250, 214);
         border: 1px solid #6dc31ca8;
         border-radius: 10px;
         display: flex;
@@ -59,6 +60,8 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 20px;
+        position: relative;
+        z-index: 3;
 
         h2 {
             width: fit-content;
@@ -84,8 +87,6 @@
         .treat_heading_wrapper {
             width: 100%;
             padding: 20px;
-            background-color: #6dc31c25;
-            border: 1px solid #6dc31ca8;
             border-radius: 10px;
             display: flex;
             justify-content: space-between;
@@ -112,13 +113,12 @@
         }
     }
 }
+
 @media screen and (min-width:576px) {
     .traet_heading {
         .treat_heading_wrapper {
             width: 100%;
             padding: 20px;
-            background-color: #6dc31c25;
-            border: 1px solid #6dc31ca8;
             border-radius: 10px;
             display: flex;
             justify-content: space-between;
@@ -145,13 +145,12 @@
         }
     }
 }
+
 @media screen and (min-width:1024px) {
     .traet_heading {
         .treat_heading_wrapper {
             width: 100%;
             padding: 20px;
-            background-color: #6dc31c25;
-            border: 1px solid #6dc31ca8;
             border-radius: 10px;
             display: flex;
             justify-content: space-between;
@@ -179,3 +178,4 @@
         }
     }
 }
+
