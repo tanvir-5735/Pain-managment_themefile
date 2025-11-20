@@ -1555,11 +1555,11 @@ footer#footer .footerWrapper .footNote {
 }
 #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
   width: 100%;
+  max-width: 797px;
 }
 #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper .doctor_Image {
-  width: 100%;
-  max-width: 797px;
-  height: 100%;
+  aspect-ratio: 797/759;
+  max-height: 760px;
 }
 #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper .doctor_Image img {
   width: 100%;
@@ -1916,11 +1916,11 @@ footer#footer .footerWrapper .footNote {
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
     width: 100%;
+    max-width: 797px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper .doctor_Image {
-    width: 100%;
-    max-width: 797px;
-    height: 100%;
+    aspect-ratio: 797/759;
+    max-height: 760px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper .doctor_Image img {
     width: 100%;
@@ -2310,11 +2310,11 @@ footer#footer .footerWrapper .footNote {
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
     width: 100%;
+    max-width: 797px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper .doctor_Image {
-    width: 100%;
-    max-width: 797px;
-    height: 100%;
+    aspect-ratio: 797/759;
+    max-height: 760px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper .doctor_Image img {
     width: 100%;
@@ -2644,6 +2644,7 @@ footer#footer .footerWrapper .footNote {
     background-color: rgba(233, 234, 241, 0.4509803922);
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
     border-radius: 12px;
   }
@@ -2663,11 +2664,11 @@ footer#footer .footerWrapper .footNote {
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper {
     width: 100%;
+    max-width: 797px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper .doctor_Image {
-    width: 100%;
-    max-width: 797px;
-    height: 100%;
+    aspect-ratio: 797/759;
+    max-height: 760px;
   }
   #doctor_details .doctor_Detail_Wrapper .doctor_image_wrapper .doctor_Image img {
     width: 100%;

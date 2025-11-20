@@ -49,7 +49,7 @@
             </div>
             <div class="doctor_image_wrapper">
                 <div class="doctor_Image">
-                    <img src="http://localhost/smohamed/wp-content/uploads/2025/11/Dr.-Salah-Eldin-Mohamed.jpg"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dr_salah_eldin_mohamed.jpg"
                     alt="picture">
                 </div>
             </div>

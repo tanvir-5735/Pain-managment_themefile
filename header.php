@@ -44,7 +44,7 @@
                 <!-- ===nav logo=== -->
                 <div class="navLogo">
                     <a href="/smohamed/home">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asstets/images/nav_logo.png" alt="logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav_logo.png" alt="logo">
                     </a>
                 </div>
                 <!-- ===nav menu=== -->
