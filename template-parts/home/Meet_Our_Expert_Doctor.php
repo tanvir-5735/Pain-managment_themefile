@@ -19,18 +19,18 @@
             <div class="specilist_card_wrapper">
                 <div class="specilist_card">
                     <div class="card_image">
-
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/11/75c.png" alt="doctor image">
+                        <!--  -->
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/DrHossamEldinMohamed.png" alt="doctor image">
 
                     </div>
                     <div class="card_content">
                         <h6> Dr. Hossam Eldin Mohamed </h6>
                         <p>Physical Medicine & Rehabilitation interventional Pain Management</p>
                         <div class="card_btn_wrapper">
-                            <a href="http://localhost/smohamed/dr-hossam-eldin-mohamed/">
+                            <a href="<?php echo home_url('/dr_hossam_eldin_mohamed'); ?>">
                                 <div class="myBtn"><span>Learn more</span></div>
                             </a>
-                            <a href="/smohamed/about-our-physicians/" class="interlink">
+                            <a href="<?php echo home_url('/about_our_physician'); ?>" class="interlink">
                                 <div class="myBtn">book now</div>
                             </a>
                         </div>
@@ -38,16 +38,16 @@
                 </div>
                 <div class="specilist_card">
                     <div class="card_image">
-                            <img src="http://localhost/smohamed/wp-content/uploads/2025/11/334d516b9.png" alt="doctor image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dr_salah_eldin_mohammed.png" alt="doctor image">
                     </div>
                     <div class="card_content">
                         <h6> Dr. Salah Eldin Mohamed </h6>
                         <p>Physical Medicine & Rehabilitation interventional Pain Management</p>
                         <div class="card_btn_wrapper">
-                            <a href="/dr-salah-eldin-mohamed">
+                            <a href="<?php echo home_url('/dr_salah_eldin_mohamed'); ?>">
                                 <div class="myBtn"><span>Learn more</span></div>
                             </a>
-                            <a href="/smohamed/about-our-physicians/" class="interlink">
+                            <a href="<?php echo home_url('/about_our_physician'); ?>" class="interlink">
                                 <div class="myBtn">book now</div>
                             </a>
                         </div>

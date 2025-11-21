@@ -63,3 +63,35 @@
         }
     }
 }
+@media screen and (max-width:576px) {
+    #about_practice{
+        padding-top: 80px;
+        .about_wrapper_container{
+            padding: 48px 20px;
+        }
+    }
+}
+@media screen and (min-width:576px) {
+    #about_practice{
+        padding-top: 80px;
+        .about_wrapper_container{
+            padding: 48px 20px;
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    #about_practice{
+        padding-top: 90px;
+        .about_wrapper_container{
+            padding: 48px ;
+        }
+    }
+}
+@media screen and (min-width:1400px) {
+    #about_practice{
+        padding-top: 120px;
+        .about_wrapper_container{
+            padding: 48px;
+        }
+    }
+}

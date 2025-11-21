@@ -19,7 +19,7 @@ get_header();
 ?>
 <section>
 
-        <!-- <div class="breadCrumb">
+    <!-- <div class="breadCrumb">
             <p>Home / About Practice / Learn More</p>
         </div>
         <div class="doctor_section_wrapper">
@@ -42,24 +42,23 @@ get_header();
                 </div>
             </div>
         </div> -->
-        <?php
-            get_template_part(
-                'template-parts/doctorTemplate',
-                null,
-                [
-                    'doctor_name'    => 'Dr. Salah Eldin Mohamed',
-                    'doctor_heading' => 'Dr. Salah Eldin Mohamed',
-                    'doctor_content' => '
-                        Dr. Salah Eldin Mohamed specializes in Physical Medicine and Rehabilitation, as well as Interventional Spine and Pain Management. Dr. Mohamed started off at Stony Brook University, then did an internship in General Surgery at Louisiana State University School of Medicine. After that, he fine-tuned his skills during a residency at Burke Rehabilitation Hospital/Albert Einstein School of Medicine. With his board certification in Physical Medicine and Rehabilitation as the solid foundation, he took an extra leap to specialize further with a fellowship in Interventional Spine and Pain Management at the renowned Spine Institute of North America. This specialized training enabled him to delve deep into the musculoskeletal system, empowering him to become a doctor for pain management who can tackle a wide range of pain conditions, from the usual suspects like back and neck pain to more complex issues like cancer pain and nerve pain.
-                        <br>
-                        Dr. Mohamed combines medical and interventional approaches to design individualized treatment plans. With a solid ability to diagnose and manage complex pain issues, this pain management doctor makes sure to stay at the forefront of medical advancements. He is always on the lookout for the latest and greatest pain medicine to stay up-to-date with the latest innovations in pain medicine, making him one of the most sought-after pain management doctors in NYC and NJ.
-                    ',
-                    'doctor_image'   => 'http://localhost/smohamed/wp-content/uploads/2025/11/Dr.-Salah-Eldin-Mohamed.jpg',
-                    'breadcrumb'     => 'Home / About Practice / Learn More'
-                ]
-            );
-
-        ?>
+    <?php
+        get_template_part(
+            'template-parts/doctorTemplate',
+            null,
+            [
+                'doctor_name'    => 'Dr. Salah Eldin Mohamed',
+                'doctor_heading' => 'Dr. Salah Eldin Mohamed',
+                'doctor_content' => '
+                    Dr. Salah Eldin Mohamed specializes in Physical Medicine and Rehabilitation, as well as Interventional Spine and Pain Management. Dr. Mohamed started off at Stony Brook University, then did an internship in General Surgery at Louisiana State University School of Medicine. After that, he fine-tuned his skills during a residency at Burke Rehabilitation Hospital/Albert Einstein School of Medicine. With his board certification in Physical Medicine and Rehabilitation as the solid foundation, he took an extra leap to specialize further with a fellowship in Interventional Spine and Pain Management at the renowned Spine Institute of North America. This specialized training enabled him to delve deep into the musculoskeletal system, empowering him to become a doctor for pain management who can tackle a wide range of pain conditions, from the usual suspects like back and neck pain to more complex issues like cancer pain and nerve pain.
+                    <br>
+                    Dr. Mohamed combines medical and interventional approaches to design individualized treatment plans. With a solid ability to diagnose and manage complex pain issues, this pain management doctor makes sure to stay at the forefront of medical advancements. He is always on the lookout for the latest and greatest pain medicine to stay up-to-date with the latest innovations in pain medicine, making him one of the most sought-after pain management doctors in NYC and NJ.
+                ',
+                'doctor_image'   => get_template_directory_uri() . '/assets/images/dr_salah_eldin_mohamed.jpg',
+                'breadcrumb'     => 'Home / About Practice / Learn More'
+            ]
+        );
+    ?>
 
 </section>
 <?php

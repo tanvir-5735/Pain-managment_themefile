@@ -156,7 +156,9 @@
 
                 </div>
                 <div class="view_more_btn">
-                    <button>View More</button>
+                    <a href="<?php echo home_url('/condition_we_treat') ?>">
+                        <div class="myBtn">View More</div>
+                    </a>
                 </div>
             </div>
         </div>

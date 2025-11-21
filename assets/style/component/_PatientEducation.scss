@@ -18,7 +18,17 @@
                 border: none;
                 outline: none;
                 background-color: transparent;
+                // appearance: none;
+
+                option {
+                    border: 1px solid rgba(0, 128, 0, 0.39);
+                    background-color: #41c74123;
+                    border-top: none;
+                    border-radius: 8px;
+                    padding: 8px;
+                }
             }
+
         }
 
         #exercise_document_wrapper {
@@ -54,6 +64,7 @@
 // ================================================
 .FrequentQA_part {
     width: 100%;
+    padding: 50px 20px;
 
     .FrequentQA_heading_wrapper {
         text-align: center;
@@ -68,8 +79,19 @@
     }
 
     .FrequentQA_content_wrapper {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
         .FrequentQA_content_row {
             width: 100%;
+
+            h5 {
+                font-size: 32px;
+                margin-bottom: 12px;
+            }
 
             .FrequentQA_content_list {
                 display: flex;
@@ -81,20 +103,26 @@
                     width: 100%;
                     padding: 30px 57px;
                     border-radius: 20px;
+
                     .list_item_heading {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+
                         .FrequentQA_content_list_item_text {
                             display: flex;
                             align-items: center;
                             gap: 20px;
-    
+
                             span {
                                 font-size: 60px;
                             }
+
+                            p {
+                                font-size: 24px;
+                            }
                         }
-    
+
                         .FrequentQA_content_list_item_icon {
                             width: fit-content;
                         }
@@ -109,10 +137,12 @@
         }
     }
 }
-.colpse{
+
+.colpse {
     width: 100%;
     height: 0px;
     opacity: 0;
     display: none;
 }
+
 // ================================================

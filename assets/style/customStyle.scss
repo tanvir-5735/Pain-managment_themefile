@@ -41,7 +41,9 @@
     box-sizing: border-box;
     font-family: var(--ff-primary);
 }
-
+html{
+    margin: 0px 0px 0px 0px !important;
+}
 body{
     width: 100%;
     background-color: white !important;
@@ -56,8 +58,7 @@ body{
 }
 .breadCrumb{
     width: 100%;
-    border: 1px solid #fcb9b9a2;
-    padding: 20px 0;
+    padding: 20px;
 }
 ul,
 ol {

@@ -43,7 +43,7 @@
             <div class="nav_wrapper">
                 <!-- ===nav logo=== -->
                 <div class="navLogo">
-                    <a href="/smohamed/home">
+                    <a href="<?php echo home_url('/'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav_logo.png" alt="logo">
                     </a>
                 </div>
@@ -65,8 +65,9 @@
                     </ul>
                 </div>
                 <!-- ====nav button=== -->
+                 <!-- about_our_physician -->
                 <div class="nav_Buttons">
-                    <a href="/" class="myBtn">
+                    <a href="<?php echo home_url('/about_our_physician'); ?>" class="myBtn">
                             <span>Book Appointment</span>
                     </a>
 
@@ -91,14 +92,14 @@
             <div class="mobileMenuWrapper">
                 <ul>
                     <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/'); ?>">Home</a></li>
-                    <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/about-practice'); ?>">About
+                    <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/about_practice'); ?>">About
                             Practice</a></li>
                     <li class="mobile_nav_menu_list_item"><a
-                            href="<?php echo home_url('/conditions'); ?>">Conditions</a></li>
+                            href="<?php echo home_url('/condition_we_treat'); ?>">Conditions</a></li>
                     <li class="mobile_nav_menu_list_item"><a
                             href="<?php echo home_url('/treatments'); ?>">Treatments</a></li>
                     <li class="mobile_nav_menu_list_item"><a
-                            href="<?php echo home_url('/patient-education'); ?>">Patient Education</a></li>
+                            href="<?php echo home_url('/patient_education'); ?>">Patient Education</a></li>
                     <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/office_locations'); ?>">Office
                             Locations</a></li>
                     <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>

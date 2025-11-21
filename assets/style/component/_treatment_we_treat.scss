@@ -53,13 +53,20 @@
 
                     .flip-card-front {
                         background-color: #1E3070;
-                        h4,h2,p{
+
+                        h4,
+                        h2,
+                        p {
                             display: inline-block;
                             width: 100%;
                             max-width: 264px;
                             color: white;
                         }
-                        h4{font-size: 32px; word-wrap: break-word; }
+
+                        h4 {
+                            font-size: 32px;
+                            word-wrap: break-word;
+                        }
                     }
 
                     .flip-card-back {
@@ -69,5 +76,40 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:576px) {
+    #treatment_we_treat {
+        width: 100%;
+        padding: 65px 0 50px 0;
+
+        .treatment_card_continer {
+            .treatment_card_wrapper {
+                .flip-card {
+                    max-width: 320px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:576px) {
+    #treatment_we_treat {
+        width: 100%;
+        padding: 65px 0 50px 0;
+
+        .treatment_card_continer {
+            .treatment_card_wrapper {
+                .flip-card {
+                    max-width: 425px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    #treatment_we_treat {
+        width: 100%;
+        padding: 115px 0 50px 0;
     }
 }
