@@ -6,10 +6,11 @@
         <div class="footerWrapper">
             <div class="footernav">
                 <ul>
-                    <li>About Practice</li>
-                    <li>Treatments</li>
-                    <li>Patient Education</li>
-                    <li>Contact</li>
+                    <li class="nav_menu_list_item"><a href="<?php echo home_url('/about_practice'); ?>">About Practice</a></li>
+                    <li class="nav_menu_list_item"><a href="<?php echo home_url('/condition_we_treat'); ?>">Conditions</a></li>
+                    <li class="nav_menu_list_item"><a href="<?php echo home_url('/treatments'); ?>">Treatments</a></li>
+                    <li class="nav_menu_list_item"><a href="<?php echo home_url('/patient_education'); ?>">Patient Education</a></li>
+                    <li class="nav_menu_list_item"><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
                 </ul>
                 <div class="footerNavIcon">
                     <span>
@@ -59,9 +60,9 @@
                 <br>
             <div class="footNote">
               <span>© 2025 Khairul islam. All Rights Reserved.</span>
-              <span>Support</span>
-              <span>Privacy policy</span>
-              <span>Terms of Condition</span>
+              <span><a href="#">Support</a></span>
+              <span><a href="#">Privacy policy</a></span>
+              <span><a href="#">Terms of Condition</a></span>
             </div>
         </div>
     </div>

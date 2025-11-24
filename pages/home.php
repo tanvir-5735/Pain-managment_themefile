@@ -13,7 +13,7 @@ get_header();
 
 
 <main class="myContiner2">
-    <?php get_template_part('template-parts/home/home_banner',); ?>
+    <?php get_template_part('template-parts/home/home_banner'); ?>
     <div class="myContiner">
         <?php get_template_part('template-parts/home/about_practice'); ?>
         <?php get_template_part('template-parts/home/condition_we_treat'); ?>

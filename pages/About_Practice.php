@@ -41,7 +41,7 @@ get_header();
                         We believe healing works best as a partnership. Our role is to guide and support you with the best possible care, while you remain the captain of your own journey. Our mission is simple: to help you move better, feel better, and live better — one patient, one story, one step at a time.
                     </p>
                     <div class="btn_wrapper">
-                        <a href="#">
+                        <a href="<?= get_permalink(get_page_by_path('about_our_physicians')); ?>">
                             <div class="myBtn">
                                 <span>Meet our Providers</span>
                             </div>

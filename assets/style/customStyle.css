@@ -903,6 +903,24 @@ footer#footer .footerWrapper .footernav ul {
   align-items: center;
   gap: 20px;
 }
+footer#footer .footerWrapper .footernav ul .nav_menu_list_item a {
+  color: white;
+  position: relative;
+  transition: 0.2s all linear;
+}
+footer#footer .footerWrapper .footernav ul .nav_menu_list_item a::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: 0.2s all linear;
+}
+footer#footer .footerWrapper .footernav ul .nav_menu_list_item a:hover::after {
+  width: 100%;
+}
 footer#footer .footerWrapper .footernav .footerNavIcon {
   display: flex;
   gap: 10px;
@@ -931,6 +949,24 @@ footer#footer .footerWrapper .footNote {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+footer#footer .footerWrapper .footNote span a {
+  color: white;
+  position: relative;
+  transition: 0.2s all linear;
+}
+footer#footer .footerWrapper .footNote span a::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: 0.2s all linear;
+}
+footer#footer .footerWrapper .footNote span a:hover::after {
+  width: 100%;
 }
 
 @media screen and (max-width: 576px) {
@@ -2424,7 +2460,7 @@ footer#footer .footerWrapper .footNote {
   }
   #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header {
     text-align: center;
-    padding: 80px 10px;
+    padding: 120px 10px 80px 10px;
     position: relative;
   }
   #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header::before {
@@ -3401,6 +3437,7 @@ footer#footer .footerWrapper .footNote {
 #About_Our_Physicians {
   width: 100%;
   background-color: #E9EAF1;
+  padding-top: 152px;
 }
 #About_Our_Physicians .About_Our_Physicians_wrapper {
   width: 100%;
@@ -3436,11 +3473,12 @@ footer#footer .footerWrapper .footNote {
   padding: 22px 85px;
   background-color: var(--primary-color);
   color: white;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 576px) {
   #About_Our_Physicians {
-    padding-top: 30px;
+    padding-top: 102px;
   }
   .Book_Appointment_wrapper {
     padding: 48px 20px;
@@ -3453,6 +3491,9 @@ footer#footer .footerWrapper .footNote {
   }
 }
 @media screen and (min-width: 576px) {
+  #About_Our_Physicians {
+    padding-top: 102px;
+  }
   .Book_Appointment_wrapper {
     padding: 48px 20px;
   }
@@ -3464,6 +3505,9 @@ footer#footer .footerWrapper .footNote {
   }
 }
 @media screen and (min-width: 768px) {
+  #About_Our_Physicians {
+    padding-top: 102px;
+  }
   .Book_Appointment_wrapper {
     padding: 48px;
   }
@@ -3475,6 +3519,9 @@ footer#footer .footerWrapper .footNote {
   }
 }
 @media screen and (min-width: 1024px) {
+  #About_Our_Physicians {
+    padding-top: 12px;
+  }
   .Book_Appointment_wrapper {
     padding: 48px;
   }

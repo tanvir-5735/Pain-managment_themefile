@@ -1,6 +1,7 @@
 #About_Our_Physicians {
     width: 100%;
     background-color: #E9EAF1;
+    padding-top: 152px ;
     .About_Our_Physicians_wrapper {
         width: 100%;
     }
@@ -38,12 +39,14 @@
             padding: 22px 85px;
             background-color: var(--primary-color);
             color: white;
+            border-radius: 8px;
         }
     }
 }
 
 @media screen and (max-width:576px) {
-    #About_Our_Physicians{padding-top: 30px;}
+    #About_Our_Physicians{padding-top: 102px;}
+    
     .Book_Appointment_wrapper {
         padding: 48px 20px;
         h4 {
@@ -55,6 +58,7 @@
     }
 }
 @media screen and (min-width:576px) {
+    #About_Our_Physicians{padding-top: 102px;}
     .Book_Appointment_wrapper {
         padding: 48px 20px;
         h4 {
@@ -66,6 +70,7 @@
     }
 }
 @media screen and (min-width:768px) {
+    #About_Our_Physicians{padding-top: 102px;}
     .Book_Appointment_wrapper {
         padding: 48px;
         h4 {
@@ -77,6 +82,7 @@
     }
 }
 @media screen and (min-width:1024px) {
+    #About_Our_Physicians{padding-top: 12px;}
     .Book_Appointment_wrapper {
         padding: 48px;
         h4 {
