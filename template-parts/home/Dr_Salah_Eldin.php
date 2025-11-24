@@ -39,20 +39,46 @@
                         </p>
                     </div>
                     <div class="book_now_button">
+<<<<<<< HEAD
                         <a href="#">
                             <div class="myBtn">
                                 <span>See All</span>
                             </div>
                         </a>
+=======
+                        <a href="<?php echo get_permalink( get_page_by_path( 'about-our-physicians' ) ); ?>" class="interlink">
+                            <div class="myBtn">Book Now </div>
+                        </a>
+                        <!-- <button>Book Now </button> -->
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
                     </div>
                 </div>
             </div>
             <div class="doctor_image_wrapper">
                 <div class="doctor_Image">
+<<<<<<< HEAD
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dr_salah_eldin_mohamed.jpg"
+=======
+                    <img src="<?php echo wp_get_upload_dir()['url']; ?>/Dr.-Salah-Eldin-Mohamed.jpg"
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
                     alt="picture">
                 </div>
             </div>
         </div>
     </div>
 </section>
+<<<<<<< HEAD
+=======
+<style>  /* ----added by me--- */
+    #doctor_details{
+        .myContiner{
+            .doctor_Detail_Wrapper{
+                margin-top:80px ;
+            }
+
+        }
+
+    }
+
+</style>
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78

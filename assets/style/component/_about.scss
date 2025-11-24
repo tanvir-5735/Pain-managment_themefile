@@ -1,3 +1,6 @@
+// ============================
+@import '../../commonComponent';
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #about_practice {
     width: 100%;
     padding-top: 152px;
@@ -37,8 +40,13 @@
                     text-align: center;
                     padding: 32px 0;
 
+<<<<<<< HEAD:assets/style/component/_about.scss
                     .myBtn{
                         @include myBtn(12px , 40px);
+=======
+                    .myBtn {
+                        @include myBtn(20px, 80px) ;                                           
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78:asstets/style/component/_about.scss
                     }
                 }
             }

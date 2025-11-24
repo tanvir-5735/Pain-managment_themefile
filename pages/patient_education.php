@@ -18,8 +18,15 @@ get_header();
             <div id="exercise_document_wrapper" class="hidden">
                 <?php get_template_part('template-parts/home_exercise_program', 'HomeExerciseProgram'); ?>
             </div>
+<<<<<<< HEAD
             <div id="faq_section" class="">
                 <?php get_template_part('template-parts/frequent_qa', 'FrequentQA'); ?>
+=======
+            <div class="exercise_document_wrapper">
+                <div class="exercise_document_item">
+                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/11/image-5.png" alt="exercise_document_item">
+                </div>
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
             </div>
         </div>
 

@@ -43,8 +43,13 @@
             <div class="nav_wrapper">
                 <!-- ===nav logo=== -->
                 <div class="navLogo">
+<<<<<<< HEAD
                     <a href="<?php echo home_url('/'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav_logo.png" alt="logo">
+=======
+                    <a href="/smohamed/home">
+                        <img src="<?php echo get_template_directory_uri(); ?>/header_log.png" alt="logo">
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
                     </a>
                 </div>
                 <!-- ===nav menu=== -->
@@ -63,6 +68,7 @@
                                 Locations</a></li>
                         <li class="nav_menu_list_item"><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
                     </ul>
+<<<<<<< HEAD
                 </div>
                 <!-- ====nav button=== -->
                  <!-- about_our_physician -->
@@ -71,6 +77,12 @@
                             <span>Book Appointment</span>
                     </a>
 
+=======
+                 </div>
+                 <!-- ====nav button=== -->
+                  <div class="nav_Buttons">
+                    <button><a href="http://localhost/smohamed/about-our-physicians/">Book Appointment</a></button>
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
                     <div class="mobile_menu_icon_wrapper">
                         <span id="mobile_menu_icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                 viewBox="0 -960 960 960" width="24px" fill="white">

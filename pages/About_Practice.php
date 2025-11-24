@@ -20,7 +20,11 @@ get_header();
         <div class="about_wrapper_container">
             <div class="about_banner">
                 <div class="aboutBannerImage">
+<<<<<<< HEAD
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about_banner.jpg"
+=======
+                    <img src="<?php echo wp_get_upload_dir()['url']; ?>/about_banner.jpg"
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
                         alt="about banner image">
                 </div>
             </div>
@@ -41,10 +45,15 @@ get_header();
                         We believe healing works best as a partnership. Our role is to guide and support you with the best possible care, while you remain the captain of your own journey. Our mission is simple: to help you move better, feel better, and live better — one patient, one story, one step at a time.
                     </p>
                     <div class="btn_wrapper">
+<<<<<<< HEAD
                         <a href="<?= get_permalink(get_page_by_path('about_our_physicians')); ?>">
                             <div class="myBtn">
                                 <span>Meet our Providers</span>
                             </div>
+=======
+                        <a href="<?php echo get_permalink( get_page_by_path( 'about-our-physicians' ) ); ?>">
+                            <div class="myBtn">Meet Our Providers</div>
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
                         </a>
                     </div>
                 </div>

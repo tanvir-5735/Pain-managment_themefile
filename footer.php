@@ -6,11 +6,19 @@
         <div class="footerWrapper">
             <div class="footernav">
                 <ul>
+<<<<<<< HEAD
                     <li class="nav_menu_list_item"><a href="<?php echo home_url('/about_practice'); ?>">About Practice</a></li>
                     <li class="nav_menu_list_item"><a href="<?php echo home_url('/condition_we_treat'); ?>">Conditions</a></li>
                     <li class="nav_menu_list_item"><a href="<?php echo home_url('/treatments'); ?>">Treatments</a></li>
                     <li class="nav_menu_list_item"><a href="<?php echo home_url('/patient_education'); ?>">Patient Education</a></li>
                     <li class="nav_menu_list_item"><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
+=======
+                    <li>About Practice</li>
+                    <li>Conditions</li>
+                    <li>Treatments</li>
+                    <li>Patient Education</li>
+                    <li>Contact</li>
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
                 </ul>
                 <div class="footerNavIcon">
                     <span>
@@ -38,8 +46,12 @@
             <div class="footerContent">
               <div class="footerCol1">
                 <div class="foterLogo">
+<<<<<<< HEAD
                   
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/foooter_logo.png" alt="foooter_logo.png">
+=======
+                  <img src="<?php echo get_template_directory_uri(); ?>/header_log.png" alt="">
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
                 </div>
                 <div class="footerContact">
                   <h6>Contact us:</h6>
@@ -53,7 +65,11 @@
                 </div>
               </div>
               <div class="footerCol2">
+<<<<<<< HEAD
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.1301050501215!2d-74.03432400007401!3d40.615238643886215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24f88eb97ece9%3A0xe81899501d125c5b!2s9711%203rd%20Ave%202nd%20floor%2C%20Brooklyn%2C%20NY%2011209%2C%20USA!5e0!3m2!1sen!2sbd!4v1763640823473!5m2!1sen!2sbd" width="100%" height="350" style="border:0px; border-radius:20px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+=======
+                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/10/map-box.png" alt=" footer map">
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
               </div>
             </div>
                 <hr>

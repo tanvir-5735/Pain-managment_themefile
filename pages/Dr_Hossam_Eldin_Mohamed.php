@@ -38,12 +38,16 @@ get_header();
                         Dedicated to evidence-based, patient-centered care, Dr. Mohamed combines clinical excellence with a personable and approachable style. He takes pride in tailoring individualized treatment plans that address the underlying causes of pain and functional limitations. With extensive experience in interventional pain procedures and rehabilitation therapies, Dr. Mohamed is committed to helping patients achieve lasting relief and return to an active, fulfilling lifestyle.
 
                     ',
+<<<<<<< HEAD
                     'doctor_image'   => get_template_directory_uri() . '/assets/images/Dr_Hossam_ldin_mohamed.png',
+=======
+                    'doctor_image'   => 'http://localhost/smohammed/wp-content/uploads/2025/11/656f9beee081d0b3102f39c0f5f062754ac33dbf-1.png',
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78
                     'breadcrumb'     => 'Home / About Practice / Learn More'
                 ]
             );
         ?>
-
++
 </section>
 <?php
 get_footer();

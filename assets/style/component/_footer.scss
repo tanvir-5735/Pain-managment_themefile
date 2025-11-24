@@ -1,6 +1,6 @@
 footer#footer {
     width: 100%;
-    padding: 20px;
+    padding: 48px;
     background-color: var(--primary-color);
     color: white;
 
@@ -51,7 +51,11 @@ footer#footer {
             width: 100%;
             display: flex;
             justify-content: space-between;
+<<<<<<< HEAD:assets/style/component/_footer.scss
             gap: 20px;
+=======
+            align-items: center;
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78:asstets/style/component/_footer.scss
 
             .footerCol1 {
                 display: flex;
@@ -59,13 +63,24 @@ footer#footer {
 
                 // .foterLogo{}
                 .footerContact {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 27px;
                     h6 {
                         width: fit-content;
                         background-color: white;
                         color: var(--primary-color);
                         padding: 5px 12px;
                     }
+<<<<<<< HEAD:assets/style/component/_footer.scss
                     p{padding: 10px 0;}
+=======
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+>>>>>>> 0f8e9a2413509368dc65cef26d02f706c0ac9e78:asstets/style/component/_footer.scss
                 }
             }
 
@@ -144,6 +159,8 @@ footer#footer {
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 30px 0;
+                align-items: flex-start;
+              
 
                 .footerCol1 {
                     display: flex;
@@ -162,6 +179,7 @@ footer#footer {
                     }
 
                     .footerContact {
+                        gap:10px ;
                         h6 {
                             width: fit-content;
                             background-color: white;
@@ -237,14 +255,15 @@ footer#footer {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: start;
+                align-items: flex-start;
                 padding: 30px 0;
+ 
 
                 .footerCol1 {
                     display: flex;
                     flex-direction: row;
                     gap: 15%;
-
                     .foterLogo {
                         width: 100px;
                         height: 100px;
@@ -257,6 +276,7 @@ footer#footer {
                     }
 
                     .footerContact {
+                        gap:16px;
                         h6 {
                             width: fit-content;
                             background-color: white;
@@ -292,7 +312,7 @@ footer#footer {
 
      footer#footer {
         width: 100%;
-        padding: 20px;
+        padding: 30px;
         background-color: #1E3070;
         color: white;
 
@@ -330,6 +350,7 @@ footer#footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                align-items: center;
                 padding: 30px 0;
 
                 .footerCol1 {
@@ -350,6 +371,7 @@ footer#footer {
                     }
 
                     .footerContact {
+                        gap: 20px;
                         h6 {
                             width: fit-content;
                             background-color: white;
@@ -360,7 +382,7 @@ footer#footer {
                 }
 
                 .footerCol2 {
-                    width: 100%;
+                    aspect-ratio: 811/303;
 
                     img {
                         width: 100%;
